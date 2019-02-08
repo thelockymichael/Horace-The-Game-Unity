@@ -14,6 +14,11 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator anim;
 
+    public float fireRate;
+
+    private float nextFire;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +38,10 @@ public class PlayerMovement : MonoBehaviour
            // anim.SetBool("IsJumping", true);
         }
 
-        if (Input.GetButtonDown("Crouch"))
+        if (Input.GetButtonDown("Crouch")) //&& Time.time > nextFire)
         {
+            nextFire = Time.time + fireRate;
+
             Debug.Log("Crouching");
             crouch = true;
         }
@@ -50,6 +57,12 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(0.01f);
         anim.SetBool("IsJumping", true);
+    }
+
+    IEnumerator slideDelay()
+    {
+        yield return new WaitForSeconds(1.23f);
+        crouch = false;
     }
     public void OnLanding()
     {
