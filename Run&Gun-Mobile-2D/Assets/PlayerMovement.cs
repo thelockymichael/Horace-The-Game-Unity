@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
+    bool slidingFinished = false;
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -41,39 +42,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        /*
-        horizontalMove = (Input.GetAxisRaw("Horizontal") * runSpeed);
-            
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-            StartCoroutine(jumpDelay());
-           // anim.SetBool("IsJumping", true);
-        }
-
-        if (Input.GetButtonDown("Crouch")) //&& Time.time > nextFire)
-        {
-          nextFire = Time.time + fireRate;
-
-            Debug.Log("Crouching");
-            crouch = true;
-        }
-
-        else if (Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            crouch = false;
-
-            // crouch = false;
-            //anim.SetBool("IsSliding", true);
-        }
-    */
-    
-    
         var InputDevice = InputManager.ActiveDevice;
 
 
-         horizontalMove = (InputManager.ActiveDevice.LeftStickX * runSpeed);
+        // horizontalMove = (InputManager.ActiveDevice.LeftStickX * runSpeed);
        // horizontalMove = CrossPlatformInputManager.GetAxis("Horizontal") * runSpeed;
 
         //rb.velocity = new Vector2(horizontalMove * 10, 0);
@@ -87,8 +59,9 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = (Vector2.left * -runSpeed);
         }*/
 
-        if (InputManager.ActiveDevice.DPadUp)
+        if (InputManager.ActiveDevice.DPadUp && slidingFinished)
         {
+            slidingFinished = false;
             jump = true;
             StartCoroutine(jumpDelay());
             // anim.SetBool("IsJumping", true);
@@ -97,18 +70,17 @@ public class PlayerMovement : MonoBehaviour
         if (InputManager.ActiveDevice.DPadDown) //&& Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
-
-            Debug.Log("Crouching");
+            slidingFinished = false;
+            Debug.Log("Sliding");
             crouch = true;
+
         }
 
         else if (Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
+            slidingFinished = true;
             crouch = false;
-
-            // crouch = false;
-            //anim.SetBool("IsSliding", true);
         }
 
         Vector2 movement = new Vector2(horizontalMove, 0.0f);
