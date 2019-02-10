@@ -37,16 +37,21 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         controller = GetComponent<CharacterController2D>();
     }
+    private void FixedUpdate()
+    {
+        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        jump = false;
+    }
 
-    // Update is called once per frame
-    void Update()
+// Update is called once per frame
+void Update()
     {
 
         var InputDevice = InputManager.ActiveDevice;
 
 
         // horizontalMove = (InputManager.ActiveDevice.LeftStickX * runSpeed);
-       // horizontalMove = CrossPlatformInputManager.GetAxis("Horizontal") * runSpeed;
+        // horizontalMove = CrossPlatformInputManager.GetAxis("Horizontal") * runSpeed;
 
         //rb.velocity = new Vector2(horizontalMove * 10, 0);
         /*
@@ -66,7 +71,6 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(jumpDelay());
             // anim.SetBool("IsJumping", true);
         }
-
         if (InputManager.ActiveDevice.DPadDown) //&& Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
@@ -113,9 +117,14 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("IsSliding", isCrouching);
     }
 
-    private void FixedUpdate()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
-        jump = false;
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            anim.SetTrigger("gotHurt");
+
+        }
     }
+
 }
+
