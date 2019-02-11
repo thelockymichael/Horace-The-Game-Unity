@@ -11,28 +11,41 @@ public class PlayerMovement : MonoBehaviour
         public float xMin, xMax, yMin, yMax;
     }
 
+    // Boundary
+    public Boundary boundary;
 
+    // Controller
     private CharacterController2D controller;
 
+    // Movement variables
     public float runSpeed = 40f;
-
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
     bool slidingFinished = false;
 
+    // Animator 
     private Animator anim;
+    // Rigidbody 2D
     private Rigidbody2D rb;
 
+    // Firerate and nextFire
     public float fireRate;
-
     private float nextFire;
+    
+    //Move to the back point variables
+    //public Transform backPoint;
+    public bool moveBack = false;
 
-    public Boundary boundary;
+ 
+
+    public Transform myTarget;  // Using it to grab the player's position
+    private float playerXPosition;
 
     // Start is called before the first frame update
     void Start()
     {
+ 
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         controller = GetComponent<CharacterController2D>();
@@ -43,12 +56,18 @@ public class PlayerMovement : MonoBehaviour
         jump = false;
     }
 
+
 // Update is called once per frame
 void Update()
     {
+        if (moveBack)
+        {
+            playerXPosition = myTarget.position.x;
+            transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), 0.2f);
+        }
 
-        var InputDevice = InputManager.ActiveDevice;
-
+         
+            var InputDevice = InputManager.ActiveDevice;
 
         // horizontalMove = (InputManager.ActiveDevice.LeftStickX * runSpeed);
         // horizontalMove = CrossPlatformInputManager.GetAxis("Horizontal") * runSpeed;
@@ -63,6 +82,7 @@ void Update()
         {
             rb.velocity = (Vector2.left * -runSpeed);
         }*/
+
 
         if (InputManager.ActiveDevice.DPadUp && slidingFinished)
         {
@@ -122,9 +142,10 @@ void Update()
         if (other.gameObject.CompareTag("Enemy"))
         {
             anim.SetTrigger("gotHurt");
-
+            moveBack = true;
         }
     }
 
 }
+
 
