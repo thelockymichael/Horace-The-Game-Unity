@@ -7,7 +7,7 @@ public class move : MonoBehaviour
     private Rigidbody2D rb;
 
     private float dirX;
-    private float moveSpeed = 10f;
+    public float moveSpeed = 10f;
 
     // Start is called before the first frame update
     void Start()
