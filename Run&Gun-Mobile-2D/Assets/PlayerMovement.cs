@@ -89,7 +89,7 @@ void Update()
             slidingFinished = false;
             jump = true;
             StartCoroutine(jumpDelay());
-            // anim.SetBool("IsJumping", true);
+            //anim.SetBool("IsJumping", true);
         }
         if (InputManager.ActiveDevice.DPadDown) //&& Time.time > nextFire)
         {
@@ -118,7 +118,7 @@ void Update()
 
     IEnumerator jumpDelay()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.5f);
         anim.SetBool("IsJumping", true);
     }
 
