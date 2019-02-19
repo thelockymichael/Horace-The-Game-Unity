@@ -11,18 +11,23 @@ public class GameController : MonoBehaviour
     public float startWait;
     public float waveWait;
 
+
     public Text scoreText;
     public Text restartText;
     public Text newHighScoreText;
     public Text highScoreText;
     public Text gameOverText;
 
-    private bool gameOver;
+    public bool gameOver;
     private bool restart;
     private int score;
 
+    public GameObject[] backGroundLayers;
+
     void Start()
     {
+
+        gameOver = false;
         /*
         gameOver = false;
         restart = false;
@@ -69,6 +74,11 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
+                foreach (GameObject enemy in backGroundLayers)
+                {
+                    enemy.gameObject.GetComponent<BGScroller>().enabled = false;
+                }
+               // backGroundLayers.BGScroller();
                 restartText.text = "try again";
                 restart = true;
                 break;

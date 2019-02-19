@@ -32,9 +32,18 @@ public class PlayerMovement02 : MonoBehaviour
 
     private float playerXPosition;
 
+    public bool gameOver = false;
+
+    // Reference Game Objects
+    private GameController gameController;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        GameObject gameControllerObject = GameObject.FindWithTag("GameController");
+        gameController = gameControllerObject.GetComponent<GameController>();
+
         gotHit = 0;
         controller = GetComponent<CharacterController2D>();
         anim = GetComponent<Animator>();
@@ -50,61 +59,72 @@ public class PlayerMovement02 : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Got Hit: " + gotHit);
 
-        if (gotHit == 1)
-        {
-            playerXPosition = MoveBack.position.x;
-            transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
-            StartCoroutine(moveBackDelay());
-            
-        }
+            Debug.Log("Got Hit: " + gotHit);
 
-        if (gotHit >= 2)
-        {
-            playerXPosition = deadPoint.position.x;
-            transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
-        }
+      //  if(!gameOver)
+      //  {
+            if (gotHit == 1 && !gameOver)
+            {
+                playerXPosition = MoveBack.position.x;
+                transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
+                StartCoroutine(moveBackDelay());
 
-        if (gotHit == 0)
-        {
-            playerXPosition = originPoint.position.x;
-            transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), 0.03f);
-        }
+            }
 
-        var InputDevice = InputManager.ActiveDevice;
+            if (gotHit >= 2)
+            {
+            anim.SetBool("gameOver", true);
+            gameController.gameOver = true;
+                gameOver = true;
+                playerXPosition = deadPoint.position.x;
+                transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
+            }
 
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+            if (gotHit == 0 && !gameOver)
+            {
+                playerXPosition = originPoint.position.x;
+                transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), 0.03f);
+            }
+        
+           
 
-        if(InputManager.ActiveDevice.DPadUp)
-        {
-            jump = true;
+            var InputDevice = InputManager.ActiveDevice;
 
-            StartCoroutine(jumpDelay());
-           // anim.SetBool("IsJumping", true);
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        }
-        if (InputManager.ActiveDevice.DPadUp && slidingFinished)
-        {
-            slidingFinished = false;
-            jump = true;
-            StartCoroutine(jumpDelay());
-            //anim.SetBool("IsJumping", true);
-        }
-        if (InputManager.ActiveDevice.DPadDown)
-        {
-            nextFire = Time.time + fireRate;
-            slidingFinished = false;
-            Debug.Log("Sliding");
-            crouch = true;
-        }
-        else if (Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            slidingFinished = true;
-            crouch = false;
-        }
+            if (InputManager.ActiveDevice.DPadUp)
+            {
+                jump = true;
+
+                StartCoroutine(jumpDelay());
+                // anim.SetBool("IsJumping", true);
+
+            }
+            if (InputManager.ActiveDevice.DPadUp && slidingFinished)
+            {
+                slidingFinished = false;
+                jump = true;
+                StartCoroutine(jumpDelay());
+                //anim.SetBool("IsJumping", true);
+            }
+            if (InputManager.ActiveDevice.DPadDown)
+            {
+                nextFire = Time.time + fireRate;
+                slidingFinished = false;
+                Debug.Log("Sliding");
+                crouch = true;
+            }
+            else if (Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                slidingFinished = true;
+                crouch = false;
+            }
+        
+       
     }
+
     IEnumerator jumpDelay()
     {
         yield return new WaitForSeconds(0.1f);
@@ -125,6 +145,7 @@ public class PlayerMovement02 : MonoBehaviour
     {
         anim.SetBool("IsSliding", isCrouching);
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Enemy") && hit)
