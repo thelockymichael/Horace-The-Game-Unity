@@ -6,12 +6,15 @@ using InControl;
 public class PlayerMovement02 : MonoBehaviour
 {
     private CharacterController2D controller;
+    private GameController gameController;
+
     private Animator anim;
     private Rigidbody2D rb;
 
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     bool jump = false;
+    private bool jumpingAllowed = true;
     bool crouch = false;
     bool slidingFinished = false;
 
@@ -24,6 +27,7 @@ public class PlayerMovement02 : MonoBehaviour
 
     public int gotHit;
 
+
     public Transform deadPoint; 
     public Transform MoveBack;  // Using it to grab the player's position
     public Transform originPoint; 
@@ -35,7 +39,6 @@ public class PlayerMovement02 : MonoBehaviour
     public bool gameOver = false;
 
     // Reference Game Objects
-    private GameController gameController;
 
 
     public float timeLimit;
@@ -45,6 +48,7 @@ public class PlayerMovement02 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // gameObject.transform.GetChild(1).gameObject.SetActive(false);
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         gameController = gameControllerObject.GetComponent<GameController>();
 
@@ -82,6 +86,7 @@ public class PlayerMovement02 : MonoBehaviour
 
         if (gotHit >= 2)
         {
+            jumpingAllowed = false;
             anim.SetBool("gameOver", true);
             gameController.gameOver = true;
             gameOver = true;
@@ -102,7 +107,7 @@ public class PlayerMovement02 : MonoBehaviour
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        if (InputManager.ActiveDevice.DPadUp)
+        if (InputManager.ActiveDevice.DPadUp && jumpingAllowed)
         {
             jump = true;
 
@@ -110,7 +115,7 @@ public class PlayerMovement02 : MonoBehaviour
             // anim.SetBool("IsJumping", true);
 
         }
-        if (InputManager.ActiveDevice.DPadUp && slidingFinished)
+        if (InputManager.ActiveDevice.DPadUp && slidingFinished && jumpingAllowed)
         {
             slidingFinished = false;
             jump = true;

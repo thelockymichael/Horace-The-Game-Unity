@@ -2,8 +2,20 @@
 using UnityEngine.UI;
 using System.Collections;
 
+//Coin system
+[System.Serializable]
+public class scoreSystem
+{
+    public int coins;
+
+}
+
 public class GameController : MonoBehaviour
 {
+
+
+    public scoreSystem scoreSystem;
+
     public GameObject[] hazards;
     public Vector2 spawnValues;
     public int hazardCount;
@@ -12,6 +24,7 @@ public class GameController : MonoBehaviour
     public float waveWait;
 
 
+    public Text coinCountText;
     public Text scoreText;
     public Text restartText;
     public Text newHighScoreText;
@@ -26,7 +39,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-
+        coinCountText.text = "Coins: ";
         gameOver = false;
         /*
         gameOver = false;
@@ -49,6 +62,16 @@ public class GameController : MonoBehaviour
 
             }
         }
+    }
+
+    public void AddCoins(int newCoinValue)
+    {
+        scoreSystem.coins += newCoinValue;
+        UpdateScore();
+    }
+    void UpdateScore()
+    {
+        coinCountText.text = "Coins: " + scoreSystem.coins.ToString();
     }
 
     IEnumerator SpawnWaves()
