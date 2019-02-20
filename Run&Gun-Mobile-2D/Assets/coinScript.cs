@@ -5,10 +5,13 @@ using UnityEngine;
 public class coinScript : MonoBehaviour
 {
     private GameController gameController;
-
+    public float speed = 2.5f;
+    private Rigidbody2D rb;
+    public int coinValue;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         GameObject gameControllerObject = GameObject.FindWithTag("GameController");
         gameController = gameControllerObject.GetComponent<GameController>();
     }
@@ -17,10 +20,16 @@ public class coinScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            gameController.AddCoins(3);
+            Debug.Log(other.name);
+            gameController.AddCoins(coinValue);
             Destroy(gameObject);
         }
         
     }
 
+    private void FixedUpdate()
+    {
+        rb.velocity = (Vector2.left * speed);
+
+    }
 }

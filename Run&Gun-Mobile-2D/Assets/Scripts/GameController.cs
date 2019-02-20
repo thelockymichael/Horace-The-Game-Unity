@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour
 
 
     public Text coinCountText;
+    public Text feetCountText;
+
     public Text scoreText;
     public Text restartText;
     public Text newHighScoreText;
@@ -35,11 +37,21 @@ public class GameController : MonoBehaviour
     private bool restart;
     private int score;
 
+    public bool running = true;
+
+
+
+    // Record the player's distance
+    public float distance = 1f;
+
     public GameObject[] backGroundLayers;
 
     void Start()
     {
-        coinCountText.text = "Coins: ";
+        running = true;
+        coinCountText.text = "0";
+        feetCountText.text = "0";
+
         gameOver = false;
         /*
         gameOver = false;
@@ -55,7 +67,19 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-         if (restart)
+        if (running)
+        {
+            ++distance;
+            float distanceRun = distance * Time.time;
+
+            Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
+
+            int playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
+            feetCountText.text = playerHasRun.ToString();
+
+        }
+
+        if (restart)
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -71,7 +95,7 @@ public class GameController : MonoBehaviour
     }
     void UpdateScore()
     {
-        coinCountText.text = "Coins: " + scoreSystem.coins.ToString();
+        coinCountText.text = scoreSystem.coins.ToString();
     }
 
     IEnumerator SpawnWaves()
@@ -97,9 +121,9 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
-                foreach (GameObject enemy in backGroundLayers)
+                foreach (GameObject layer in backGroundLayers)
                 {
-                    enemy.gameObject.GetComponent<BGScroller>().enabled = false;
+                    layer.gameObject.GetComponent<BGScroller>().enabled = false;
                 }
                // backGroundLayers.BGScroller();
                 restartText.text = "try again";

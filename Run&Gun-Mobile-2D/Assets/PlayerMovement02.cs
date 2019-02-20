@@ -45,6 +45,10 @@ public class PlayerMovement02 : MonoBehaviour
     private bool timeOut;
     private float timer;
     private float innerTimer;
+    private bool executeOnce = false;
+
+    public GameObject[] backGroundLayers;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,11 +69,33 @@ public class PlayerMovement02 : MonoBehaviour
     }
     // Update is called once per frame
 
-     void Update()
+   
+
+    void Update()
     {
-        
+
+        void SpeedUp()
+        {
+            foreach (GameObject layer in backGroundLayers)
+            {
+          //      layer.gameObject.GetComponent<BGScroller>().speed = 0.4f;
+            }
+
+
+        }
+
+
+        void SlowDown()
+        {
+            foreach (GameObject layer in backGroundLayers)
+            {
+           //     layer.gameObject.GetComponent<BGScroller>().speed = 0.2f;
+            }
+        }
+
         if (gotHit == 1 && !gameOver)
         {
+            SlowDown();
             timer += Time.deltaTime;
             // innerTimer -= Time.deltaTime;
             Debug.Log(Mathf.RoundToInt(timer));
@@ -80,6 +106,7 @@ public class PlayerMovement02 : MonoBehaviour
         }
         if (timer > timeLimit)
         {
+            executeOnce = true;
             gotHit = 0;
             timer = 0;
         }
@@ -87,6 +114,7 @@ public class PlayerMovement02 : MonoBehaviour
         if (gotHit >= 2)
         {
             jumpingAllowed = false;
+            gameController.running = false;
             anim.SetBool("gameOver", true);
             gameController.gameOver = true;
             gameOver = true;
@@ -94,13 +122,17 @@ public class PlayerMovement02 : MonoBehaviour
             transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
         }
 
-        if (gotHit == 0 && !gameOver )
+        if (gotHit == 0 && !gameOver)
         {
-           
+
             playerXPosition = originPoint.position.x;
             transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), 0.03f);
         }
-
+        if (executeOnce)
+        {
+            executeOnce = false;
+            SpeedUp();
+        }
 
 
         var InputDevice = InputManager.ActiveDevice;
