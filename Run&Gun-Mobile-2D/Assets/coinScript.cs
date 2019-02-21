@@ -21,7 +21,7 @@ public class coinScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log(other.name);
-            gameController.AddCoins(coinValue);
+           gameController.AddCoins(coinValue);
             Destroy(gameObject);
         }
         

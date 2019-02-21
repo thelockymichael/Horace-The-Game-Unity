@@ -1,20 +1,16 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
-//Coin system
-[System.Serializable]
-public class scoreSystem
-{
-    public int coins;
-
-}
 
 public class GameController : MonoBehaviour
 {
+    private static GameController instance;
+    public static GameController Instance { get { return instance; } }
 
-
-    public scoreSystem scoreSystem;
 
     public GameObject[] hazards;
     public Vector2 spawnValues;
@@ -39,15 +35,26 @@ public class GameController : MonoBehaviour
 
     public bool running = true;
 
+    public static GameController datamanagement;
 
+    public int highScore = 0;
+    public int coinsCollected = 0;
 
     // Record the player's distance
     public float distance = 1f;
 
     public GameObject[] backGroundLayers;
 
+    public int playerHasRun;
     void Start()
     {
+        highScoreText.text = /*"Hiscore: " + */PlayerPrefs.GetInt("HighScore", 0).ToString();
+
+        newHighScoreText.text = "";
+
+        playerHasRun = 0;
+        UpdateScore();
+
         running = true;
         coinCountText.text = "0";
         feetCountText.text = "0";
@@ -74,7 +81,7 @@ public class GameController : MonoBehaviour
 
             Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
 
-            int playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
+            playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
             feetCountText.text = playerHasRun.ToString();
 
         }
@@ -90,12 +97,12 @@ public class GameController : MonoBehaviour
 
     public void AddCoins(int newCoinValue)
     {
-        scoreSystem.coins += newCoinValue;
+        coinsCollected += newCoinValue;
         UpdateScore();
     }
     void UpdateScore()
     {
-        coinCountText.text = scoreSystem.coins.ToString();
+        coinCountText.text = coinsCollected.ToString();
     }
 
     IEnumerator SpawnWaves()
@@ -105,7 +112,7 @@ public class GameController : MonoBehaviour
         {
             for (int i = 0; i < hazardCount; i++)
             {
-                GameObject hazard = hazards[Random.Range(0, hazards.Length)];
+                GameObject hazard = hazards[UnityEngine.Random.Range(0, hazards.Length)];
                 // bool flag = Random.value();
                 // if (flag)
                 //{
@@ -125,12 +132,28 @@ public class GameController : MonoBehaviour
                 {
                     layer.gameObject.GetComponent<BGScroller>().enabled = false;
                 }
-               // backGroundLayers.BGScroller();
+
+                feetCountText.text = playerHasRun.ToString();
+
+
+                if (playerHasRun > PlayerPrefs.GetInt("HighScore", 0))
+                {
+                    PlayerPrefs.SetInt("HighScore", playerHasRun);
+                    highScoreText.text = /*"Hiscore : " + */playerHasRun.ToString();
+                    newHighScoreText.text = "New High \nScore!";
+                }
+                // backGroundLayers.BGScroller();
                 restartText.text = "try again";
                 restart = true;
                 break;
             }
         }
+    }
+    [Serializable]
+    class gameData
+    {
+        public int highScore;
+        public int coinsCollected;
     }
 
     /*
@@ -143,29 +166,29 @@ public class GameController : MonoBehaviour
         clone.GetComponent<Mover>().speed = 0;
     }*/
 
-        /*
-    public void AddScore(int newScoreValue)
+    /*
+public void AddScore(int newScoreValue)
+{
+    score += newScoreValue;
+    UpdateScore();
+}
+
+void UpdateScore()
+{
+    scoreText.text = "Score: " + score.ToString();
+}
+
+public void GameOver()
+{
+    gameOverText.text = "game over";
+    gameOver = true;
+    scoreText.text = "Score: " + score.ToString();
+
+    if(score > PlayerPrefs.GetInt("HighScore", 0))
     {
-        score += newScoreValue;
-        UpdateScore();
+        PlayerPrefs.SetInt("HighScore", score);
+        highScoreText.text = "Hiscore : " + score.ToString();
+        newHighScoreText.text = "New High \nScore!";
     }
-
-    void UpdateScore()
-    {
-        scoreText.text = "Score: " + score.ToString();
-    }
-
-    public void GameOver()
-    {
-        gameOverText.text = "game over";
-        gameOver = true;
-        scoreText.text = "Score: " + score.ToString();
-
-        if(score > PlayerPrefs.GetInt("HighScore", 0))
-        {
-            PlayerPrefs.SetInt("HighScore", score);
-            highScoreText.text = "Hiscore : " + score.ToString();
-            newHighScoreText.text = "New High \nScore!";
-        }
-    }*/
+}*/
 }
