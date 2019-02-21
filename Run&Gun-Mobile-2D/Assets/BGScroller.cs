@@ -14,7 +14,7 @@ public class BGScroller : MonoBehaviour
         rend = GetComponent<Renderer>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if(startMoving)
         {

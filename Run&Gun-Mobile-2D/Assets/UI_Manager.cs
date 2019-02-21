@@ -12,7 +12,6 @@ public class UI_Manager : MonoBehaviour
 
     public void TouchToStart()
     {
-
         gameController.playGame = true;
         foreach (GameObject layer in backGroundLayers)
         {
