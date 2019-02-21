@@ -4,6 +4,7 @@ using System.Collections;
 public class BGScroller : MonoBehaviour
 {
     public float speed = 0.5f;
+    public bool startMoving = false;
 
     private Renderer rend;
 
@@ -13,10 +14,14 @@ public class BGScroller : MonoBehaviour
         rend = GetComponent<Renderer>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        Vector2 offset = new Vector2 (Time.time * speed, 0);
+        if(startMoving)
+        {
+            Vector2 offset = new Vector2(Time.time * speed, 0);
 
-        rend.material.mainTextureOffset = offset;
+            rend.material.mainTextureOffset = offset;
+        }
+      
     }
 }

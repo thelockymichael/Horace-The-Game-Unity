@@ -73,103 +73,111 @@ public class PlayerMovement02 : MonoBehaviour
 
     void Update()
     {
+        anim.SetBool("isRunning", false);
 
-        void SpeedUp()
+        if (gameController.playGame)
         {
-            foreach (GameObject layer in backGroundLayers)
+            void SpeedUp()
             {
-          //      layer.gameObject.GetComponent<BGScroller>().speed = 0.4f;
+                foreach (GameObject layer in backGroundLayers)
+                {
+                    //      layer.gameObject.GetComponent<BGScroller>().speed = 0.4f;
+                }
+
+
             }
 
 
-        }
-
-
-        void SlowDown()
-        {
-            foreach (GameObject layer in backGroundLayers)
+            void SlowDown()
             {
-           //     layer.gameObject.GetComponent<BGScroller>().speed = 0.2f;
+                foreach (GameObject layer in backGroundLayers)
+                {
+                    //     layer.gameObject.GetComponent<BGScroller>().speed = 0.2f;
+                }
+            }
+
+            if (gotHit == 1 && !gameOver)
+            {
+                SlowDown();
+                timer += Time.deltaTime;
+                // innerTimer -= Time.deltaTime;
+                Debug.Log(Mathf.RoundToInt(timer));
+                playerXPosition = MoveBack.position.x;
+                transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
+                // StartCoroutine(moveBackDelay());
+
+            }
+            if (timer > timeLimit)
+            {
+                executeOnce = true;
+                gotHit = 0;
+                timer = 0;
+            }
+
+            if (gotHit >= 2)
+            {
+                jumpingAllowed = false;
+                gameController.running = false;
+                anim.SetBool("gameOver", true);
+                gameController.gameOver = true;
+                gameOver = true;
+                playerXPosition = deadPoint.position.x;
+                transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
+            }
+
+            if (gotHit == 0 && !gameOver)
+            {
+
+                playerXPosition = originPoint.position.x;
+                transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), 0.03f);
+            }
+            if (executeOnce)
+            {
+                executeOnce = false;
+                SpeedUp();
+            }
+
+
+            var InputDevice = InputManager.ActiveDevice;
+
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+            anim.SetBool("isRunning", true);
+
+            if (InputManager.ActiveDevice.DPadUp && jumpingAllowed)
+            {
+                jump = true;
+
+                StartCoroutine(jumpDelay());
+                // anim.SetBool("IsJumping", true);
+
+            }
+            if (InputManager.ActiveDevice.DPadUp && slidingFinished && jumpingAllowed)
+            {
+                slidingFinished = false;
+                jump = true;
+                StartCoroutine(jumpDelay());
+                //anim.SetBool("IsJumping", true);
+            }
+            if (InputManager.ActiveDevice.DPadDown)
+            {
+                nextFire = Time.time + fireRate;
+                slidingFinished = false;
+                Debug.Log("Sliding");
+                crouch = true;
+            }
+            else if (Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                slidingFinished = true;
+                crouch = false;
             }
         }
-
-        if (gotHit == 1 && !gameOver)
-        {
-            SlowDown();
-            timer += Time.deltaTime;
-            // innerTimer -= Time.deltaTime;
-            Debug.Log(Mathf.RoundToInt(timer));
-            playerXPosition = MoveBack.position.x;
-            transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
-           // StartCoroutine(moveBackDelay());
-
-        }
-        if (timer > timeLimit)
-        {
-            executeOnce = true;
-            gotHit = 0;
-            timer = 0;
-        }
-
-        if (gotHit >= 2)
-        {
-            jumpingAllowed = false;
-            gameController.running = false;
-            anim.SetBool("gameOver", true);
-            gameController.gameOver = true;
-            gameOver = true;
-            playerXPosition = deadPoint.position.x;
-            transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
-        }
-
-        if (gotHit == 0 && !gameOver)
-        {
-
-            playerXPosition = originPoint.position.x;
-            transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), 0.03f);
-        }
-        if (executeOnce)
-        {
-            executeOnce = false;
-            SpeedUp();
-        }
-
-
-        var InputDevice = InputManager.ActiveDevice;
-
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-
-        if (InputManager.ActiveDevice.DPadUp && jumpingAllowed)
-        {
-            jump = true;
-
-            StartCoroutine(jumpDelay());
-            // anim.SetBool("IsJumping", true);
-
-        }
-        if (InputManager.ActiveDevice.DPadUp && slidingFinished && jumpingAllowed)
-        {
-            slidingFinished = false;
-            jump = true;
-            StartCoroutine(jumpDelay());
-            //anim.SetBool("IsJumping", true);
-        }
-        if (InputManager.ActiveDevice.DPadDown)
-        {
-            nextFire = Time.time + fireRate;
-            slidingFinished = false;
-            Debug.Log("Sliding");
-            crouch = true;
-        }
-        else if (Time.time > nextFire)
-        {
-            nextFire = Time.time + fireRate;
-            slidingFinished = true;
-            crouch = false;
-        }
-
-
     }
+         
+
+
+    
     /*
 void Update()
 {

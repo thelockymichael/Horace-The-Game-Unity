@@ -31,6 +31,8 @@ public class GameController : MonoBehaviour
 
     public bool gameOver;
     private bool restart;
+    public bool playGame = false;
+
     private int score;
 
     public bool running = true;
@@ -74,26 +76,22 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (running)
+        if (playGame)
         {
-            ++distance;
-            float distanceRun = distance * Time.time;
-
-            Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
-
-            playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
-            feetCountText.text = playerHasRun.ToString();
-
-        }
-
-        if (restart)
-        {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (running)
             {
+                ++distance;
+                float distanceRun = distance * Time.time;
+
+                Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
+
+                playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
+                feetCountText.text = playerHasRun.ToString();
 
             }
         }
     }
+  
 
     public void AddCoins(int newCoinValue)
     {
@@ -108,7 +106,7 @@ public class GameController : MonoBehaviour
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        while (true)
+        while (true && playGame)
         {
             for (int i = 0; i < hazardCount; i++)
             {
