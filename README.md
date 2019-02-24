@@ -7,3 +7,5 @@ This would be end scope for the purpose of this game. Other features that would 
 # Usage
 
 You can either clone the directory or download the ZIP file and open it in Unity. If you want to, you can even install one of the .APK files on your Android device found in '/Run&Gun-Mobile-2D/Builds'.
+
+![alt text](http://example.com/exampl.png)
