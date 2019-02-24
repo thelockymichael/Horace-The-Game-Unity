@@ -2,7 +2,7 @@
 Run and Gun is a coming mobile game made in Unity3D in my own spare time.
 You take control of a foolish cowboy called Horace whose only goal is to run away from an angered bear while dodging obstacles and collecting coins and trying to get as far as possible without stumbling.
 
-This would be end scope for the purpose of this game. Other features that would be included are e.g. power-ups and an achievements system.
+This would be the end scope for the purpose of this game. Other features that would be included are e.g. power-ups and an achievements system.
 
 # Usage
 
