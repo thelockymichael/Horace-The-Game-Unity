@@ -10,4 +10,4 @@ You can either clone the directory or download the ZIP file and open it in Unity
 
 # Demo
 
-<video src="Horace.mp4" width="320" height="200" controls preload></video>
+<video src="Horace.mp4" alt = "demo video" width="320" height="200" controls preload></video>
