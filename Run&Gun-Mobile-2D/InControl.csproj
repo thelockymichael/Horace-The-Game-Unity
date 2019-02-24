@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{BAD8E7CF-FF3B-5E94-CBC8-ED1B41905521}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>InControl</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_3_2;UNITY_2018_3;UNITY_2018;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2018.3.2f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\InControl\Plugins\InControlPluginsPath.cs" />
+    <Compile Include="Assets\InControl\Plugins\iOS\ICadePluginPath.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\BindingListenOptions.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\BindingSource.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\BindingSourceListener.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\BindingSourceRejectionType.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\BindingSourceType.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\DeviceBindingSource.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\DeviceBindingSourceListener.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\Key.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\KeyBindingSource.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\KeyBindingSourceListener.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\KeyCombo.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\KeyInfo.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\Mouse.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\MouseBindingSource.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\MouseBindingSourceListener.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\PlayerAction.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\PlayerActionSet.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\PlayerOneAxisAction.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\PlayerTwoAxisAction.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\UnknownDeviceBindingSource.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\UnknownDeviceBindingSourceListener.cs" />
+    <Compile Include="Assets\InControl\Source\Binding\UnknownDeviceControl.cs" />
+    <Compile Include="Assets\InControl\Source\Compatibility\HeaderAttribute.cs" />
+    <Compile Include="Assets\InControl\Source\Compatibility\RangeAttribute.cs" />
+    <Compile Include="Assets\InControl\Source\Compatibility\SpaceAttribute.cs" />
+    <Compile Include="Assets\InControl\Source\Components\InControlManager.cs" />
+    <Compile Include="Assets\InControl\Source\Control\DeadZone.cs" />
+    <Compile Include="Assets\InControl\Source\Control\IInputControl.cs" />
+    <Compile Include="Assets\InControl\Source\Control\InputControl.cs" />
+    <Compile Include="Assets\InControl\Source\Control\InputControlMapping.cs" />
+    <Compile Include="Assets\InControl\Source\Control\InputControlSource.cs" />
+    <Compile Include="Assets\InControl\Source\Control\InputControlState.cs" />
+    <Compile Include="Assets\InControl\Source\Control\InputControlType.cs" />
+    <Compile Include="Assets\InControl\Source\Control\InputRange.cs" />
+    <Compile Include="Assets\InControl\Source\Control\InputRangeType.cs" />
+    <Compile Include="Assets\InControl\Source\Control\OneAxisInputControl.cs" />
+    <Compile Include="Assets\InControl\Source\Control\TwoAxisInputControl.cs" />
+    <Compile Include="Assets\InControl\Source\Debug\InControlException.cs" />
+    <Compile Include="Assets\InControl\Source\Debug\Logger.cs" />
+    <Compile Include="Assets\InControl\Source\Device\InputDevice.cs" />
+    <Compile Include="Assets\InControl\Source\Device\InputDeviceClass.cs" />
+    <Compile Include="Assets\InControl\Source\Device\InputDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\Device\InputDeviceProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Device\InputDeviceStyle.cs" />
+    <Compile Include="Assets\InControl\Source\GUI\InControlInputModule.cs" />
+    <Compile Include="Assets\InControl\Source\iCade\ICadeDevice.cs" />
+    <Compile Include="Assets\InControl\Source\iCade\ICadeDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\iCade\ICadeNative.cs" />
+    <Compile Include="Assets\InControl\Source\iCade\ICadeState.cs" />
+    <Compile Include="Assets\InControl\Source\InputManager.cs" />
+    <Compile Include="Assets\InControl\Source\Native\ControlSources\NativeAnalogSource.cs" />
+    <Compile Include="Assets\InControl\Source\Native\ControlSources\NativeButtonSource.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\AfterglowPrismaticXboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\AirFloControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\AtPlayControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\BatarangControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\BETAOPControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\BigBenControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\BrookNeoGeoConverterMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\BrookPS2ConverterMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\DragonRiseArcadeStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\EASportsControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ElecomControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\GameStopControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\GuitarHeroControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HarmonixDrumKitMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HarmonixGuitarMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HarmonixKeyboardMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoneyBeeControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriBlueSoloControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriDOA4ArcadeStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriEX2ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingCommanderMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingEdgeArcadeStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingStickEX2MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingStickVXMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriPadEXTurboControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriPadUltimateMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProEXMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProEXPremiumVLXMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProEXSEMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProHayabusaMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProIVMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVHayabusaMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVKaiFightingStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVXMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVXSAMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriXbox360GemPadExMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\HyperkinX91MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\InjusticeFightStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\IonDrumRockerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\JoytekXbox360ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\KonamiDancePadMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechChillStreamControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechDriveFXRacingWheelMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechF310ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechF510ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechF710ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechG920RacingWheelMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechThunderpadMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzArcadeStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzBeatPadMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzBrawlStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzCODControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightPadControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightPadMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightStickTE2MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightStickTESPlusMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFPSProMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzGhostReconFightingStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMC2ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMC2RacingWheelMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMicroConControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMicroControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMLGFightStickTEMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzNeoFightStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzPortableDrumMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzProControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSaitekAV8R02MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSF4FightStickRound2TEMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSF4FightStickSEMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSF4FightStickTEMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSoulCaliberFightStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSSF4ChunLiFightStickTEMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSSF4FightStickTEMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MatCatzControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MayflashMagicNSMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftAdaptiveControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXbox360ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXboxControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXboxOneEliteControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MKKlassikFightStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MLGControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\MVCTEStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\NaconGC100XFControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPAfterglowControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPBattlefieldXBoxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPMarvelControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPMetallicsLEControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPTitanfall2XboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPTronControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPVersusControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPXbox360ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPXboxOneArcadeStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPXboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAAirflowControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\POWERAFUS1ONTournamentControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAMiniControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAMiniProExControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAMiniXboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerASpectraIlluminatedControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ProEXXbox360ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ProEXXboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\QanbaFightStickPlusMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerAtroxArcadeStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerOnzaControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerOnzaTEControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerSabertoothEliteControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerStrikeControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerWildcatControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerWolverineUltimateControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RedOctaneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RedOctaneGuitarMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RockBandDrumsMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RockBandGuitarMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyPS3ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyXbox360ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyXboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\SaitekXbox360ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustMasterFerrari430RacingWheelMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustmasterFerrari458RacingWheelMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustMasterFerrari458SpiderRacingWheelMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustmasterGPXControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustmasterTMXMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\TrustPredatorJoystickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\TSZPelicanControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\Xbox360ControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\Xbox360MortalKombatFightStickMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\Xbox360ProEXControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Generated\XboxOneControllerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\BuffaloClassicMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoNES30ProBTMacNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoNES30ProUSBMacNativeProfile1.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoSFC30MacNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoSNES30MacNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\LogitechF310ModeDMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\LogitechF510ModeDMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\LogitechF710ModeDMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\NintendoSwitchProMacNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\PlayStation3MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\PlayStation4MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\PowerANintendoSwitchMacNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\Xbox360DriverMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\XboxOneDriverMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\XboxOneSMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\XTR_G2_MacNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Mac\XTR55_G2_MacNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\AfterglowXbox360WindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\AirFloPS3WindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\BuffaloClassicWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\EightBitdoNES30ProWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\EightBitdoSFC30WindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\EightBitdoSNES30WindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\GameCubeMayflashWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF310ModeDWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF310ModeXWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF510ModeDWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF510ModeXWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF710ModeDWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF710ModeXWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\NintendoSwitchProWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\NVidiaShieldWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\PCTWINSHOCKWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\PlayStation4WindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\RazerServalWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\SteamWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\Xbox360WiredWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\Xbox360WirelessWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneEliteWindows10AENativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneEliteWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWindows10AENativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWindows10NativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWirelessAdapterWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XInputWindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XTR_G2_WindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\DeviceProfiles\Windows\XTR55_G2_WindowsNativeProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\Native.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeDeviceDriverType.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeDeviceInfo.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeDeviceTransportType.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeInputDevice.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeInputDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeInputDeviceMatcher.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeInputDeviceProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeInputDeviceProfileList.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeInputOptions.cs" />
+    <Compile Include="Assets\InControl\Source\Native\NativeVersionInfo.cs" />
+    <Compile Include="Assets\InControl\Source\OuyaEverywhere\OuyaEverywhereDevice.cs" />
+    <Compile Include="Assets\InControl\Source\OuyaEverywhere\OuyaEverywhereDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\Controls\TouchButtonControl.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\Controls\TouchStickControl.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\Controls\TouchSwipeControl.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\Controls\TouchTrackControl.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\Touch.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchControl.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchControlAnchor.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchInputDevice.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchManager.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchPool.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchSprite.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchType.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchUnitType.cs" />
+    <Compile Include="Assets\InControl\Source\Touch\TouchUtility.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityAnalogSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityButtonSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityGyroAxisSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityKeyCodeAxisSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityKeyCodeComboSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityKeyCodeSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityMouseAxisSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\ControlSources\UnityMouseButtonSource.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\CustomInputDeviceProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AirFloWiredPS3MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AirFloWiredPS3WinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AmazonFireTVProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AmazonFireTVRemoteProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVMiBoxRemoteProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVRemoteProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AppleMFiProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AppleTVRemoteProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\AppleTVWirelessControllerProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\BeboncoolDA015CAAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\BetopBTPAX1TAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\BetopBTPGenericAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\BuffaloClassicAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\BuffaloClassicMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\BuffaloClassicWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\DroidBoxPS3AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\DroidBoxXboxAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoFC30ProAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoNES30ProAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoNES30ProMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoNES30ProWindowsProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSFC30AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSFC30MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSFC30WindowsProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSNES30AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSNES30MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSNES30WindowsProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\ExecutionerXProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\FixXBG301AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\FlareAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GameCubeMayflashWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GameCubeWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GameSirG3sAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GameSirG3wAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GameSirG4sAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GameStickLinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GameStickProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GenericAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GenericBlackberryProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GenericLinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\GreenThrottleAtlasAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\HamaBlackForceWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\IpegaPG9023AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\IpegaPG9025AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LevelUpBlackHawkWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310LinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeDMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeDWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeXMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeXWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510LinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeDMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeDWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeXMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeXWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710LinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710ModeDWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710ModeXWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechModeDAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechModeXAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\LogitechWingManWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MadCatzCTRLRAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MadCatzCTRLRAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MadCatzMicroCTRLRAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MaxFireBlaze5WinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MogaHeroPowerAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MogaProAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MogaProLinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MogaProMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MogaProPowerAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\MogaProWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NatecGenesisP44WinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerRemoteProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShield2016AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShield2017AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NvidiaShieldRemoteAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShieldWin10Profile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShieldWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\NykoPlayPadProAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\OuyaAmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\OuyaLinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\OuyaWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation2WinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3BWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3LinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3ShenghicWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3WinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4AmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4AndroidXperiaZ5Profile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4LinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4MacBTProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4MacUSBProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4Profile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4SteamLinkMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4WinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\PlayStationVitaPSMProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\RazerServalForgeTVProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\RazerServalMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\RedSamuraiAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SaitekAviatorWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SamsungGP20AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SpeedlinkStrikeMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SpeedlinkStrikeWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeLinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesStratusXLAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesStratusXLWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\ValveStreamingWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\Xbox360AmazonProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\Xbox360AndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\Xbox360LinuxProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\Xbox360MacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\Xbox360RockCandyAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\Xbox360WinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneBluetoothAndroidProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWin10AEProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWin10Profile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XiaomiMacProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XiaomiWinProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XTR_G2_MacUnityProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XTR_G2_WindowsUnityProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XTR55_G2_MacUnityProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\DeviceProfiles\XTR55_G2_WindowsUnityProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\UnityInputDevice.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\UnityInputDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\UnityInputDeviceProfile.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\UnityInputDeviceProfileBase.cs" />
+    <Compile Include="Assets\InControl\Source\Unity\UnityInputDeviceProfileList.cs" />
+    <Compile Include="Assets\InControl\Source\Utility\CodeWriter.cs" />
+    <Compile Include="Assets\InControl\Source\Utility\IUpdateable.cs" />
+    <Compile Include="Assets\InControl\Source\Utility\MarshalUtility.cs" />
+    <Compile Include="Assets\InControl\Source\Utility\RingBuffer.cs" />
+    <Compile Include="Assets\InControl\Source\Utility\SingletonMonoBehavior.cs" />
+    <Compile Include="Assets\InControl\Source\Utility\ThreadSafeQueue.cs" />
+    <Compile Include="Assets\InControl\Source\Utility\Utility.cs" />
+    <Compile Include="Assets\InControl\Source\UWP\UWPDevice.cs" />
+    <Compile Include="Assets\InControl\Source\UWP\UWPDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\VersionInfo.cs" />
+    <Compile Include="Assets\InControl\Source\XboxOne\XboxOneInputDevice.cs" />
+    <Compile Include="Assets\InControl\Source\XboxOne\XboxOneInputDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\XInput\XInputDevice.cs" />
+    <Compile Include="Assets\InControl\Source\XInput\XInputDeviceManager.cs" />
+    <Compile Include="Assets\InControl\Source\XInput\XInputDotNetPure\GamePad.cs" />
+    <Compile Include="Assets\InControl\Test\TestInputManager.cs" />
+    <None Include="Assets\InControl\Readme\README.txt" />
+    <None Include="Assets\InControl\Readme\CHANGELOG.txt" />
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="NSubstitute">
+      <HintPath>C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&amp;Gun-Mobile-2D/Library/PackageCache/com.unity.2d.common@1.0.11-preview.1/Tests/Editor/Lib/NSubstitute/NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&amp;Gun-Mobile-2D/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Editor">
+      <HintPath>C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&amp;Gun-Mobile-2D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&amp;Gun-Mobile-2D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&amp;Gun-Mobile-2D/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&amp;Gun-Mobile-2D/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
