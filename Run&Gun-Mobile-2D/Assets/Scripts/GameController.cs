@@ -22,12 +22,13 @@ public class GameController : MonoBehaviour
 
     public Text coinCountText;
     public Text feetCountText;
-
-    public Text scoreText;
-    public Text restartText;
+    
     public Text newHighScoreText;
     public Text highScoreText;
-    public Text gameOverText;
+
+    public Text currencyBalance;
+    public int currentBalance;
+    public int currencyInRun = 0;
 
     public bool gameOver;
     private bool restart;
@@ -50,6 +51,11 @@ public class GameController : MonoBehaviour
     public int playerHasRun;
     void Start()
     {
+
+        currentBalance = PlayerPrefs.GetInt("currencyPref");
+
+        currencyBalance.text = currentBalance.ToString();
+
         highScoreText.text = /*"Hiscore: " + */PlayerPrefs.GetInt("HighScore", 0).ToString();
 
         newHighScoreText.text = "";
@@ -71,11 +77,12 @@ public class GameController : MonoBehaviour
         score = 0;
         UpdateScore();*/
         StartCoroutine(SpawnWaves());
-       // highScoreText.text = "Hiscore: " + PlayerPrefs.GetInt("HighScore", 0).ToString();
+        // highScoreText.text = "Hiscore: " + PlayerPrefs.GetInt("HighScore", 0).ToString();
     }
 
     private void Update()
     {
+
         if (playGame)
         {
             if (running)
@@ -87,19 +94,20 @@ public class GameController : MonoBehaviour
 
                 playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
                 feetCountText.text = playerHasRun.ToString();
-
             }
         }
     }
-  
 
     public void AddCoins(int newCoinValue)
     {
         coinsCollected += newCoinValue;
+        currencyInRun += newCoinValue;
         UpdateScore();
     }
+
     void UpdateScore()
     {
+      
         coinCountText.text = coinsCollected.ToString();
     }
 
@@ -118,8 +126,8 @@ public class GameController : MonoBehaviour
                 //}
                 Vector2 spawnPosition = new Vector2(spawnValues.x, spawnValues.y);
                 Quaternion spawnRotation = Quaternion.identity;
-               GameObject clone = Instantiate(hazard, spawnPosition, spawnRotation);
-              //  ReverseDirection(clone);
+                GameObject clone = Instantiate(hazard, spawnPosition, spawnRotation);
+                //  ReverseDirection(clone);
                 yield return new WaitForSeconds(spawnWait);
             }
             yield return new WaitForSeconds(waveWait);
@@ -131,8 +139,16 @@ public class GameController : MonoBehaviour
                     layer.gameObject.GetComponent<BGScroller>().enabled = false;
                 }
 
+                // storeCoinsHere.text = coinsCollected.ToString();
+
                 feetCountText.text = playerHasRun.ToString();
 
+                currentBalance += currencyInRun;
+                PlayerPrefs.SetInt("currencyPref", currentBalance);
+
+                currencyBalance.text = currentBalance.ToString();
+
+                currencyInRun = 0; // reset this for the next round
 
                 if (playerHasRun > PlayerPrefs.GetInt("HighScore", 0))
                 {
@@ -141,18 +157,13 @@ public class GameController : MonoBehaviour
                     newHighScoreText.text = "New High \nScore!";
                 }
                 // backGroundLayers.BGScroller();
-                restartText.text = "try again";
-                restart = true;
+               // restartText.text = "try again";
+              //  restart = true;
                 break;
             }
         }
     }
-    [Serializable]
-    class gameData
-    {
-        public int highScore;
-        public int coinsCollected;
-    }
+}
 
     /*
     void ReverseDirection(GameObject clone)
@@ -189,4 +200,3 @@ public void GameOver()
         newHighScoreText.text = "New High \nScore!";
     }
 }*/
-}

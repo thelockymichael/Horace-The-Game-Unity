@@ -60,8 +60,6 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 c1fc81318a42bc4150b89bac12efef5c Unity.2D.SpriteShape.Runtime.dll:UnityEngine.U2D.SpriteShapeController
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 99657e07ec8981fdbdb72fcd4fc4eebe Assembly-CSharp.dll:.PickupSpawner
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -264,7 +262,7 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FPS
 edec4c602b0001fe25485c47ebf3be6c Unity.2D.IK.Runtime.dll:UnityEditor.Experimental.U2D.IK.IKEditorManagerHelper
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
-dd31b85a357ee74f99143ee6b5670442 Assembly-CSharp.dll:.GameController
+6b5cdcef867aafeb4283004c3854d90b Assembly-CSharp.dll:.GameController
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 99a90dc51e453273f1b7627e1f6f2c00 InControl.dll:InControl.TouchStickControl
 c4e1576accb88b117a9ecb4410606ba7 InControl.dll:InControl.InControlManager

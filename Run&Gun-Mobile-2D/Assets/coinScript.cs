@@ -20,6 +20,7 @@ public class coinScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            other.GetComponent<BoxCollider2D>().enabled = false;
             Debug.Log(other.name);
            gameController.AddCoins(coinValue);
             Destroy(gameObject);
