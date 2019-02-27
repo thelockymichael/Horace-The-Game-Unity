@@ -90,7 +90,7 @@ public class GameController : MonoBehaviour
                 ++distance;
                 float distanceRun = distance * Time.time;
 
-                Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
+       //         Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
 
                 playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
                 feetCountText.text = playerHasRun.ToString();
