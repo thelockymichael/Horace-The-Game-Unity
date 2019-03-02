@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&Gun-Mobile-2D/Builds/Gun&Run05.apk
+C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&Gun-Mobile-2D/Builds/Gun&Run06.apk
 SceneListBegin?
 Assets/Scenes/game.unity
 SceneListEnd?
@@ -25,7 +25,7 @@ cdf2d62fa43307559ee29813ce00cb23 Assembly-CSharp.dll:.PlayerMovement
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.dll:InControl.NativeInputDeviceProfileList
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.dll:InControl.UnityInputDeviceProfileList
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GameInit
-a3c8f893be5c1deaeac4e9ec9d469fd4 Assembly-CSharp.dll:.BGScroller
+051adb63b552e03047e0d873d01a3814 Assembly-CSharp.dll:.BGScroller
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -126,7 +126,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 31fa934c20112017d2f1630c7b428ca2 Assembly-CSharp.dll:.PickupManager
 347581df9c2102dfebd0268ddfd70232 InControl.Examples.dll:InterfaceMovement.ButtonManager
-a4fc5b4cbb507b92fae9f796c86751df Assembly-CSharp.dll:.UI_Manager
+5d60e31861921be64c8b6aca630b5d5d Assembly-CSharp.dll:.UI_Manager
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 b21af3632b0aaa863cfe392d5fd7a5d3 Unity.2D.SpriteShape.Runtime.dll:UnityEngine.U2D.SpriteShape
@@ -213,6 +213,7 @@ b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 88f9d58bbfdeb7de1a4c2d2bb66e91d2 InControl.dll:InControl.InControlInputModule
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:SpriterDotNetUnity.SpriterDotNetBehaviourEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.Examples.dll:MultiplayerBasicExample.Player
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.Examples.dll:BindingsExample.BindingsExample
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -255,6 +256,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 9b2d72155209a515197b0788f9f11a91 Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.LimbSolver2D
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+b1536eb214a47fd21197ae12adee9c2d Assembly-CSharp.dll:SpriterDotNetUnity.SpriterData
 d1f07c9e64b7817e6271f80bb03de25f InControl.Examples.dll:MultiplayerBasicExample.PlayerManager
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.dll:InControl.InControlPluginsPath
@@ -303,6 +305,7 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 0e1d02c74d354ffc8b804011a794739b Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.IKManager2D
+4e511c24732f4a5828a1c54c57ef500a Assembly-CSharp.dll:SpriterDotNetUnity.SpriterDotNetBehaviour
 afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.OnCollision
 59ce5902048c1041729c804e2772b2ce Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.CCDSolver2D
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GroundCheck

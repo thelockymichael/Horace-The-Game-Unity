@@ -13,6 +13,9 @@ public class GameController : MonoBehaviour
 
 
     public GameObject[] hazards;
+
+    OnCollision[] OnCollisions;
+
     public Vector2 spawnValues;
     public int hazardCount;
     public float spawnWait;
@@ -51,6 +54,7 @@ public class GameController : MonoBehaviour
     public int playerHasRun;
     void Start()
     {
+       
 
         currentBalance = PlayerPrefs.GetInt("currencyPref");
 
@@ -76,12 +80,19 @@ public class GameController : MonoBehaviour
         gameOverText.text = "";
         score = 0;
         UpdateScore();*/
-        StartCoroutine(SpawnWaves());
+       // StartCoroutine(SpawnWaves());
         // highScoreText.text = "Hiscore: " + PlayerPrefs.GetInt("HighScore", 0).ToString();
+    }
+
+    public void startGame()
+    {
+        StartCoroutine(SpawnWaves());
+        playGame = true;
     }
 
     private void Update()
     {
+        
 
         if (playGame)
         {
@@ -114,7 +125,7 @@ public class GameController : MonoBehaviour
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        while (true && playGame)
+        while (true)
         {
             for (int i = 0; i < hazardCount; i++)
             {
@@ -134,6 +145,15 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
+                hazards = GameObject.FindGameObjectsWithTag("Enemy");
+                OnCollisions = new OnCollision[hazards.Length];
+
+                for (int i = 0; i < hazards.Length; i++)
+                {
+                    OnCollisions[i] = hazards[i].GetComponent<OnCollision>();
+                    OnCollisions[i].speed = 0f;
+                }
+
                 foreach (GameObject layer in backGroundLayers)
                 {
                     layer.gameObject.GetComponent<BGScroller>().enabled = false;
