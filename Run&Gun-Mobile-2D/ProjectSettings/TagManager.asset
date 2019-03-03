@@ -6,6 +6,8 @@ TagManager:
   tags:
   - attackTrigger
   - Enemy
+  - Boundary
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - 
   - Ground
   - Player
-  - 
+  - Boundary
   - 
   - 
   - 
@@ -49,8 +51,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Enemies
+  - name: enemyTree
+    uniqueID: 1453289599
+    locked: 0
+  - name: Player
+    uniqueID: 3742151237
+    locked: 0
+  - name: enemyCactus
     uniqueID: 3988567185
+    locked: 0
+  - name: enemyBranch
+    uniqueID: 1965494151
     locked: 0
   - name: Coins
     uniqueID: 2116613185

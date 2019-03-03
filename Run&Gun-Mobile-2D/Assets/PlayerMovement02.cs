@@ -69,7 +69,7 @@ public class PlayerMovement02 : MonoBehaviour
     }
     // Update is called once per frame
 
-   
+
 
     void Update()
     {

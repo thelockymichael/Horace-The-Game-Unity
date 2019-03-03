@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Mike\Documents\GitHub\Run-And-Gun-2D\Run&amp;Gun-Mobile-2D\Temp\gradleOut\src\main\shaders"/></dataSet><dataSet config="release" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Mike\Documents\GitHub\Run-And-Gun-2D\Run&amp;Gun-Mobile-2D\Temp\gradleOut\src\release\shaders"/></dataSet></merger>

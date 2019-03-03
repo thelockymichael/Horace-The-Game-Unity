@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\BGScroller.cs" />
     <Compile Include="Assets\coinScript.cs" />
+    <Compile Include="Assets\DestroyByBoundary.cs" />
     <Compile Include="Assets\FPS.cs" />
     <Compile Include="Assets\GroundCheck.cs" />
     <Compile Include="Assets\ItemManifest.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\PlayerMovement02.cs" />
+    <Compile Include="Assets\rotationToHand.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameInit.cs" />

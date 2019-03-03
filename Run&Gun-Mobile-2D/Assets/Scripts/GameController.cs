@@ -122,6 +122,44 @@ public class GameController : MonoBehaviour
         coinCountText.text = coinsCollected.ToString();
     }
 
+
+    public void StopAllEnemies()
+    {
+        Debug.Log("stopAllEnemies");
+        /* int vihu = 0;
+         vihu++;
+         int enemyAmount = vihu;
+         Debug.Log(enemyAmount);*/
+        //enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        string[] tagsToDisable =
+                {
+                 "Enemy",
+                 "Coin"
+             };
+        //enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        // Debug.Log(enemies.Length);
+        int i = tagsToDisable.Length;
+        foreach (string tag in tagsToDisable)
+        {
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag(tag);
+            i++;                                    //Increment loop
+            foreach (GameObject gameObj in gameObjects)
+            {
+                gameObj.GetComponent<OnCollision>().speed = 0f;
+            }
+            //Debug.Log("EMEMIES = " + (i));
+            if (i == 0)
+            {
+                //     Debug.Log("NO EMEMIES LEFT IN SCENE");
+            }
+            // enemy.GetComponent<DestroyByContact>().enemiesExplode();
+            // Debug.Log("Make enemies explode!");
+            //  Instantiate(explosion, enemy.transform.position, enemy.transform.rotation);
+            //  Debug.Log("ENEMY FOUND");
+        }
+    }
+
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
@@ -145,6 +183,8 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
+                StopAllEnemies();
+                /*
                 hazards = GameObject.FindGameObjectsWithTag("Enemy");
                 OnCollisions = new OnCollision[hazards.Length];
 
@@ -152,7 +192,7 @@ public class GameController : MonoBehaviour
                 {
                     OnCollisions[i] = hazards[i].GetComponent<OnCollision>();
                     OnCollisions[i].speed = 0f;
-                }
+                }*/
 
                 foreach (GameObject layer in backGroundLayers)
                 {

@@ -1,0 +1,706 @@
+/target:library
+/nowarn:0169
+/out:Temp/InControl.dll
+/debug:portable
+/optimize+
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.AIModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.ARModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.AnimationModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.AssetBundleModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.AudioModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.BaselibModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.ClothModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.CoreModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.CrashReportingModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.DirectorModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.FileSystemHttpModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.GameCenterModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.GridModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.HotReloadModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.IMGUIModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.ImageConversionModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.InputModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.JSONSerializeModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.LocalizationModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.ParticleSystemModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.PerformanceReportingModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.PhysicsModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.Physics2DModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.ProfilerModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.ScreenCaptureModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.SharedInternalsModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.SpatialTrackingModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.SpriteMaskModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.SpriteShapeModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.StreamingModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.StyleSheetsModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.SubstanceModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.TLSModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.TerrainModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.TextCoreModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.TextRenderingModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.TilemapModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.TimelineModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UIModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UIElementsModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UNETModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UmbraModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityConnectModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.VFXModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.VRModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.VehiclesModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.VideoModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.WindModule.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer/Variations/mono/Managed/UnityEngine.XRModule.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Runtime/UnityEngine.Timeline.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll"
+/reference:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Runtime/UnityEngine.SpatialTracking.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll"
+/reference:"C:\Program Files\Unity\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll"
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_3_2
+/define:UNITY_2018_3
+/define:UNITY_2018
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_SPRITES
+/define:ENABLE_GRID
+/define:ENABLE_TILEMAP
+/define:ENABLE_TERRAIN
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_DIRECTOR
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_WEBCAM
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_HUB
+/define:ENABLE_CLOUD_PROJECT_ID
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_TIMELINE
+/define:ENABLE_EDITOR_METRICS
+/define:ENABLE_EDITOR_METRICS_CACHING
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:INCLUDE_GI
+/define:ENABLE_MONO_BDWGC
+/define:PLATFORM_SUPPORTS_MONO
+/define:INCLUDE_PUBNUB
+/define:ENABLE_VIDEO
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_LOCALIZATION
+/define:PLATFORM_ANDROID
+/define:UNITY_ANDROID
+/define:UNITY_ANDROID_API
+/define:ENABLE_SUBSTANCE
+/define:ENABLE_EGL
+/define:ENABLE_NETWORK
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
+/define:PLATFORM_SUPPORTS_ADS_ID
+/define:UNITY_CAN_SHOW_SPLASH_SCREEN
+/define:ENABLE_VR
+/define:ENABLE_AR
+/define:UNITY_HAS_GOOGLEVR
+/define:UNITY_HAS_TANGO
+/define:ENABLE_SPATIALTRACKING
+/define:ENABLE_RUNTIME_PERMISSIONS
+/define:UNITY_ASTC_ONLY_DECOMPRESS
+/define:ENABLE_UNITYADS_RUNTIME
+/define:UNITY_UNITYADS_API
+/define:ENABLE_MONO
+/define:NET_STANDARD_2_0
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+Assets\InControl\Plugins\InControlPluginsPath.cs
+Assets\InControl\Plugins\iOS\ICadePluginPath.cs
+Assets\InControl\Source\Binding\BindingListenOptions.cs
+Assets\InControl\Source\Binding\BindingSource.cs
+Assets\InControl\Source\Binding\BindingSourceListener.cs
+Assets\InControl\Source\Binding\BindingSourceRejectionType.cs
+Assets\InControl\Source\Binding\BindingSourceType.cs
+Assets\InControl\Source\Binding\DeviceBindingSource.cs
+Assets\InControl\Source\Binding\DeviceBindingSourceListener.cs
+Assets\InControl\Source\Binding\Key.cs
+Assets\InControl\Source\Binding\KeyBindingSource.cs
+Assets\InControl\Source\Binding\KeyBindingSourceListener.cs
+Assets\InControl\Source\Binding\KeyCombo.cs
+Assets\InControl\Source\Binding\KeyInfo.cs
+Assets\InControl\Source\Binding\Mouse.cs
+Assets\InControl\Source\Binding\MouseBindingSource.cs
+Assets\InControl\Source\Binding\MouseBindingSourceListener.cs
+Assets\InControl\Source\Binding\PlayerAction.cs
+Assets\InControl\Source\Binding\PlayerActionSet.cs
+Assets\InControl\Source\Binding\PlayerOneAxisAction.cs
+Assets\InControl\Source\Binding\PlayerTwoAxisAction.cs
+Assets\InControl\Source\Binding\UnknownDeviceBindingSource.cs
+Assets\InControl\Source\Binding\UnknownDeviceBindingSourceListener.cs
+Assets\InControl\Source\Binding\UnknownDeviceControl.cs
+Assets\InControl\Source\Compatibility\HeaderAttribute.cs
+Assets\InControl\Source\Compatibility\RangeAttribute.cs
+Assets\InControl\Source\Compatibility\SpaceAttribute.cs
+Assets\InControl\Source\Components\InControlManager.cs
+Assets\InControl\Source\Control\DeadZone.cs
+Assets\InControl\Source\Control\IInputControl.cs
+Assets\InControl\Source\Control\InputControl.cs
+Assets\InControl\Source\Control\InputControlMapping.cs
+Assets\InControl\Source\Control\InputControlSource.cs
+Assets\InControl\Source\Control\InputControlState.cs
+Assets\InControl\Source\Control\InputControlType.cs
+Assets\InControl\Source\Control\InputRange.cs
+Assets\InControl\Source\Control\InputRangeType.cs
+Assets\InControl\Source\Control\OneAxisInputControl.cs
+Assets\InControl\Source\Control\TwoAxisInputControl.cs
+Assets\InControl\Source\Debug\InControlException.cs
+Assets\InControl\Source\Debug\Logger.cs
+Assets\InControl\Source\Device\InputDevice.cs
+Assets\InControl\Source\Device\InputDeviceClass.cs
+Assets\InControl\Source\Device\InputDeviceManager.cs
+Assets\InControl\Source\Device\InputDeviceProfile.cs
+Assets\InControl\Source\Device\InputDeviceStyle.cs
+Assets\InControl\Source\GUI\InControlInputModule.cs
+Assets\InControl\Source\iCade\ICadeDevice.cs
+Assets\InControl\Source\iCade\ICadeDeviceManager.cs
+Assets\InControl\Source\iCade\ICadeNative.cs
+Assets\InControl\Source\iCade\ICadeState.cs
+Assets\InControl\Source\InputManager.cs
+Assets\InControl\Source\Native\ControlSources\NativeAnalogSource.cs
+Assets\InControl\Source\Native\ControlSources\NativeButtonSource.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\AfterglowPrismaticXboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\AirFloControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\AtPlayControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\BatarangControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\BETAOPControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\BigBenControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\BrookNeoGeoConverterMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\BrookPS2ConverterMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\DragonRiseArcadeStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\EASportsControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ElecomControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\GameStopControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\GuitarHeroControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HarmonixDrumKitMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HarmonixGuitarMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HarmonixKeyboardMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoneyBeeControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriBlueSoloControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriDOA4ArcadeStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriEX2ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingCommanderMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingEdgeArcadeStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingStickEX2MacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightingStickVXMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriFightStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriPadEXTurboControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriPadUltimateMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProEXMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProEXPremiumVLXMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProEXSEMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProHayabusaMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProIVMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVHayabusaMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVKaiFightingStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVXMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriRealArcadeProVXSAMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HoriXbox360GemPadExMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\HyperkinX91MacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\InjusticeFightStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\IonDrumRockerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\JoytekXbox360ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\KonamiDancePadMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechChillStreamControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechDriveFXRacingWheelMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechF310ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechF510ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechF710ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechG920RacingWheelMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\LogitechThunderpadMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzArcadeStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzBeatPadMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzBrawlStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzCODControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightPadControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightPadMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightStickTE2MacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFightStickTESPlusMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzFPSProMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzGhostReconFightingStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMC2ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMC2RacingWheelMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMicroConControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMicroControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzMLGFightStickTEMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzNeoFightStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzPortableDrumMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzProControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSaitekAV8R02MacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSF4FightStickRound2TEMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSF4FightStickSEMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSF4FightStickTEMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSoulCaliberFightStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSSF4ChunLiFightStickTEMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MadCatzSSF4FightStickTEMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MatCatzControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MayflashMagicNSMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftAdaptiveControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXbox360ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXboxControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MicrosoftXboxOneEliteControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MKKlassikFightStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MLGControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\MVCTEStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\NaconGC100XFControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPAfterglowControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPBattlefieldXBoxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPMarvelControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPMetallicsLEControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPTitanfall2XboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPTronControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPVersusControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPXbox360ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPXboxOneArcadeStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PDPXboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAAirflowControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\POWERAFUS1ONTournamentControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAMiniControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAMiniProExControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerAMiniXboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\PowerASpectraIlluminatedControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ProEXXbox360ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ProEXXboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\QanbaFightStickPlusMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerAtroxArcadeStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerOnzaControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerOnzaTEControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerSabertoothEliteControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerStrikeControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerWildcatControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RazerWolverineUltimateControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RedOctaneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RedOctaneGuitarMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RockBandDrumsMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RockBandGuitarMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyPS3ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyXbox360ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\RockCandyXboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\SaitekXbox360ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustMasterFerrari430RacingWheelMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustmasterFerrari458RacingWheelMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustMasterFerrari458SpiderRacingWheelMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustmasterGPXControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\ThrustmasterTMXMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\TrustPredatorJoystickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\TSZPelicanControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\Xbox360ControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\Xbox360MortalKombatFightStickMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\Xbox360ProEXControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Generated\XboxOneControllerMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\BuffaloClassicMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoNES30ProBTMacNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoNES30ProUSBMacNativeProfile1.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoSFC30MacNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\EightBitdoSNES30MacNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\LogitechF310ModeDMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\LogitechF510ModeDMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\LogitechF710ModeDMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\NintendoSwitchProMacNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\PlayStation3MacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\PlayStation4MacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\PowerANintendoSwitchMacNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\Xbox360DriverMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\XboxOneDriverMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\XboxOneSMacProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\XTR_G2_MacNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Mac\XTR55_G2_MacNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\AfterglowXbox360WindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\AirFloPS3WindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\BuffaloClassicWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\EightBitdoNES30ProWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\EightBitdoSFC30WindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\EightBitdoSNES30WindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\GameCubeMayflashWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF310ModeDWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF310ModeXWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF510ModeDWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF510ModeXWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF710ModeDWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\LogitechF710ModeXWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\NintendoSwitchProWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\NVidiaShieldWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\PCTWINSHOCKWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\PlayStation4WindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\RazerServalWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\SteamWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\Xbox360WiredWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\Xbox360WirelessWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneEliteWindows10AENativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneEliteWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWindows10AENativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWindows10NativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XboxOneWirelessAdapterWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XInputWindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XTR_G2_WindowsNativeProfile.cs
+Assets\InControl\Source\Native\DeviceProfiles\Windows\XTR55_G2_WindowsNativeProfile.cs
+Assets\InControl\Source\Native\Native.cs
+Assets\InControl\Source\Native\NativeDeviceDriverType.cs
+Assets\InControl\Source\Native\NativeDeviceInfo.cs
+Assets\InControl\Source\Native\NativeDeviceTransportType.cs
+Assets\InControl\Source\Native\NativeInputDevice.cs
+Assets\InControl\Source\Native\NativeInputDeviceManager.cs
+Assets\InControl\Source\Native\NativeInputDeviceMatcher.cs
+Assets\InControl\Source\Native\NativeInputDeviceProfile.cs
+Assets\InControl\Source\Native\NativeInputDeviceProfileList.cs
+Assets\InControl\Source\Native\NativeInputOptions.cs
+Assets\InControl\Source\Native\NativeVersionInfo.cs
+Assets\InControl\Source\OuyaEverywhere\OuyaEverywhereDevice.cs
+Assets\InControl\Source\OuyaEverywhere\OuyaEverywhereDeviceManager.cs
+Assets\InControl\Source\Touch\Controls\TouchButtonControl.cs
+Assets\InControl\Source\Touch\Controls\TouchStickControl.cs
+Assets\InControl\Source\Touch\Controls\TouchSwipeControl.cs
+Assets\InControl\Source\Touch\Controls\TouchTrackControl.cs
+Assets\InControl\Source\Touch\Touch.cs
+Assets\InControl\Source\Touch\TouchControl.cs
+Assets\InControl\Source\Touch\TouchControlAnchor.cs
+Assets\InControl\Source\Touch\TouchInputDevice.cs
+Assets\InControl\Source\Touch\TouchManager.cs
+Assets\InControl\Source\Touch\TouchPool.cs
+Assets\InControl\Source\Touch\TouchSprite.cs
+Assets\InControl\Source\Touch\TouchType.cs
+Assets\InControl\Source\Touch\TouchUnitType.cs
+Assets\InControl\Source\Touch\TouchUtility.cs
+Assets\InControl\Source\Unity\ControlSources\UnityAnalogSource.cs
+Assets\InControl\Source\Unity\ControlSources\UnityButtonSource.cs
+Assets\InControl\Source\Unity\ControlSources\UnityGyroAxisSource.cs
+Assets\InControl\Source\Unity\ControlSources\UnityKeyCodeAxisSource.cs
+Assets\InControl\Source\Unity\ControlSources\UnityKeyCodeComboSource.cs
+Assets\InControl\Source\Unity\ControlSources\UnityKeyCodeSource.cs
+Assets\InControl\Source\Unity\ControlSources\UnityMouseAxisSource.cs
+Assets\InControl\Source\Unity\ControlSources\UnityMouseButtonSource.cs
+Assets\InControl\Source\Unity\CustomInputDeviceProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AirFloWiredPS3MacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AirFloWiredPS3WinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AmazonFireTVProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AmazonFireTVRemoteProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVMiBoxRemoteProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AndroidTVRemoteProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AppleMFiProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AppleTVRemoteProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\AppleTVWirelessControllerProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\BeboncoolDA015CAAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\BetopBTPAX1TAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\BetopBTPGenericAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\BuffaloClassicAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\BuffaloClassicMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\BuffaloClassicWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\DroidBoxPS3AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\DroidBoxXboxAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoFC30ProAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoNES30ProAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoNES30ProMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoNES30ProWindowsProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSFC30AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSFC30MacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSFC30WindowsProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSNES30AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSNES30MacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\EightBitdoSNES30WindowsProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\ExecutionerXProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\FixXBG301AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\FlareAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GameCubeMayflashWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GameCubeWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GameSirG3sAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GameSirG3wAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GameSirG4sAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GameStickLinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GameStickProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GenericAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GenericBlackberryProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GenericLinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\GreenThrottleAtlasAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\HamaBlackForceWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\IpegaPG9023AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\IpegaPG9025AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LevelUpBlackHawkWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310LinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeDMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeDWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeXMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF310ModeXWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510LinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeDMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeDWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeXMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF510ModeXWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710LinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710MacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710ModeDWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechF710ModeXWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechModeDAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechModeXAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\LogitechWingManWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MadCatzCTRLRAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MadCatzCTRLRAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MadCatzMicroCTRLRAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MaxFireBlaze5WinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MogaHeroPowerAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MogaProAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MogaProLinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MogaProMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MogaProPowerAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\MogaProWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NatecGenesisP44WinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerRemoteProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NexusPlayerWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShield2016AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShield2017AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NvidiaShieldRemoteAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShieldWin10Profile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NVidiaShieldWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\NykoPlayPadProAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\OuyaAmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\OuyaLinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\OuyaWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation2WinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3BWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3LinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3MacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3ShenghicWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation3WinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4AmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4AndroidXperiaZ5Profile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4LinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4MacBTProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4MacUSBProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4Profile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4SteamLinkMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStation4WinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\PlayStationVitaPSMProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\RazerServalForgeTVProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\RazerServalMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\RedSamuraiAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SaitekAviatorWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SamsungGP20AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SpeedlinkStrikeMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SpeedlinkStrikeWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeLinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesFreeWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesStratusXLAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\SteelSeriesStratusXLWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\ValveStreamingWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\Xbox360AmazonProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\Xbox360AndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\Xbox360LinuxProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\Xbox360MacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\Xbox360RockCandyAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\Xbox360WinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XboxOneBluetoothAndroidProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XboxOneMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XboxOneProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWin10AEProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWin10Profile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XboxOneWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XiaomiMacProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XiaomiWinProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XTR_G2_MacUnityProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XTR_G2_WindowsUnityProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XTR55_G2_MacUnityProfile.cs
+Assets\InControl\Source\Unity\DeviceProfiles\XTR55_G2_WindowsUnityProfile.cs
+Assets\InControl\Source\Unity\UnityInputDevice.cs
+Assets\InControl\Source\Unity\UnityInputDeviceManager.cs
+Assets\InControl\Source\Unity\UnityInputDeviceProfile.cs
+Assets\InControl\Source\Unity\UnityInputDeviceProfileBase.cs
+Assets\InControl\Source\Unity\UnityInputDeviceProfileList.cs
+Assets\InControl\Source\Utility\CodeWriter.cs
+Assets\InControl\Source\Utility\IUpdateable.cs
+Assets\InControl\Source\Utility\MarshalUtility.cs
+Assets\InControl\Source\Utility\RingBuffer.cs
+Assets\InControl\Source\Utility\SingletonMonoBehavior.cs
+Assets\InControl\Source\Utility\ThreadSafeQueue.cs
+Assets\InControl\Source\Utility\Utility.cs
+Assets\InControl\Source\UWP\UWPDevice.cs
+Assets\InControl\Source\UWP\UWPDeviceManager.cs
+Assets\InControl\Source\VersionInfo.cs
+Assets\InControl\Source\XboxOne\XboxOneInputDevice.cs
+Assets\InControl\Source\XboxOne\XboxOneInputDeviceManager.cs
+Assets\InControl\Source\XInput\XInputDevice.cs
+Assets\InControl\Source\XInput\XInputDeviceManager.cs
+Assets\InControl\Source\XInput\XInputDotNetPure\GamePad.cs
+Assets\InControl\Test\TestInputManager.cs
