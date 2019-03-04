@@ -47,15 +47,16 @@ public class GameController : MonoBehaviour
     public int coinsCollected = 0;
 
     // Record the player's distance
-    public float distance = 1f;
+    public float distance = 0f;
 
     public GameObject[] backGroundLayers;
 
-    public int playerHasRun;
+    public int playerHasRun = 0;
+    private int distanceRunDividedBy = 10;
     void Start()
     {
-       
 
+        distance = 0;
         currentBalance = PlayerPrefs.GetInt("currencyPref");
 
         currencyBalance.text = currentBalance.ToString();
@@ -72,16 +73,7 @@ public class GameController : MonoBehaviour
         feetCountText.text = "0";
 
         gameOver = false;
-        /*
-        gameOver = false;
-        restart = false;
-        restartText.text = "";
-        newHighScoreText.text = "";
-        gameOverText.text = "";
-        score = 0;
-        UpdateScore();*/
-       // StartCoroutine(SpawnWaves());
-        // highScoreText.text = "Hiscore: " + PlayerPrefs.GetInt("HighScore", 0).ToString();
+ 
     }
 
     public void startGame()
@@ -98,12 +90,12 @@ public class GameController : MonoBehaviour
         {
             if (running)
             {
-                ++distance;
-                float distanceRun = distance * Time.time;
+               ++distance;
+                float distanceRun = distance  + Time.time;
 
-       //         Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
+                //         Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
 
-                playerHasRun = Mathf.RoundToInt(distanceRun) / 200;
+                playerHasRun = Mathf.RoundToInt(distanceRun);// / distanceRunDividedBy;
                 feetCountText.text = playerHasRun.ToString();
             }
         }
@@ -153,10 +145,7 @@ public class GameController : MonoBehaviour
             {
                 //     Debug.Log("NO EMEMIES LEFT IN SCENE");
             }
-            // enemy.GetComponent<DestroyByContact>().enemiesExplode();
-            // Debug.Log("Make enemies explode!");
-            //  Instantiate(explosion, enemy.transform.position, enemy.transform.rotation);
-            //  Debug.Log("ENEMY FOUND");
+  
         }
     }
 
@@ -183,23 +172,12 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
-                StopAllEnemies();
-                /*
-                hazards = GameObject.FindGameObjectsWithTag("Enemy");
-                OnCollisions = new OnCollision[hazards.Length];
-
-                for (int i = 0; i < hazards.Length; i++)
-                {
-                    OnCollisions[i] = hazards[i].GetComponent<OnCollision>();
-                    OnCollisions[i].speed = 0f;
-                }*/
-
                 foreach (GameObject layer in backGroundLayers)
                 {
                     layer.gameObject.GetComponent<BGScroller>().enabled = false;
                 }
-
-                // storeCoinsHere.text = coinsCollected.ToString();
+                StopAllEnemies();
+           
 
                 feetCountText.text = playerHasRun.ToString();
 
@@ -224,39 +202,3 @@ public class GameController : MonoBehaviour
         }
     }
 }
-
-    /*
-    void ReverseDirection(GameObject clone)
-    {
-        //Quaternion rot = transform.localRotation;
-        //rot.eulerAngles = new Vector3(0.0f, curY, 0.0f);
-        //transform.localRotation = rot;
-        clone.transform.rotation.y = 0;
-        clone.GetComponent<Mover>().speed = 0;
-    }*/
-
-    /*
-public void AddScore(int newScoreValue)
-{
-    score += newScoreValue;
-    UpdateScore();
-}
-
-void UpdateScore()
-{
-    scoreText.text = "Score: " + score.ToString();
-}
-
-public void GameOver()
-{
-    gameOverText.text = "game over";
-    gameOver = true;
-    scoreText.text = "Score: " + score.ToString();
-
-    if(score > PlayerPrefs.GetInt("HighScore", 0))
-    {
-        PlayerPrefs.SetInt("HighScore", score);
-        highScoreText.text = "Hiscore : " + score.ToString();
-        newHighScoreText.text = "New High \nScore!";
-    }
-}*/

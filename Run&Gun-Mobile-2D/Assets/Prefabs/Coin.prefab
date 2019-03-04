@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8362661720667164656}
   - component: {fileID: 8362661720667164663}
   - component: {fileID: 8362661720667164657}
-  - component: {fileID: 8362661720667164658}
+  - component: {fileID: 6608713045645666906}
   - component: {fileID: 125922885505432681}
   - component: {fileID: 3532853561765652686}
   - component: {fileID: 6460467332062926308}
@@ -103,7 +103,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8362661720667164658
+--- !u!114 &6608713045645666906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,11 +112,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8362661720667164662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45f2435527711e54db691f8b40aa582d, type: 3}
+  m_Script: {fileID: 11500000, guid: 908bea9f24f298b4298e675148ea183d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 23
+  speed: 32
   coinValue: 1
+  isCoin: 1
 --- !u!50 &125922885505432681
 Rigidbody2D:
   serializedVersion: 4

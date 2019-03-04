@@ -168,6 +168,7 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+fde956efd03b1df6e6d233db90c26e01 Assembly-CSharp.dll:.rotationToHand
 94a740c67f3c1abec5f40d8d19c84f46 Assembly-CSharp.dll:.CharacterController2D
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.dll:InControl.ICadePluginPath
 0077fc8e4fbae67f80e80ebd534de5a0 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
@@ -258,6 +259,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 b1536eb214a47fd21197ae12adee9c2d Assembly-CSharp.dll:SpriterDotNetUnity.SpriterData
 d1f07c9e64b7817e6271f80bb03de25f InControl.Examples.dll:MultiplayerBasicExample.PlayerManager
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DestroyByBoundary
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.dll:InControl.InControlPluginsPath
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.Examples.dll:TouchExample.CubeController
@@ -306,7 +308,7 @@ fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBe
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 0e1d02c74d354ffc8b804011a794739b Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.IKManager2D
 4e511c24732f4a5828a1c54c57ef500a Assembly-CSharp.dll:SpriterDotNetUnity.SpriterDotNetBehaviour
-afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.OnCollision
+32a51bb59612f9673c7984d01cc9faf2 Assembly-CSharp.dll:.OnCollision
 59ce5902048c1041729c804e2772b2ce Unity.2D.IK.Runtime.dll:UnityEngine.Experimental.U2D.IK.CCDSolver2D
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GroundCheck
 2eec1e8d02dfb34be8d404c8a07090a3 InControl.dll:InControl.TouchManager
@@ -344,5 +346,3 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-fde956efd03b1df6e6d233db90c26e01 Assembly-CSharp.dll:.rotationToHand
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DestroyByBoundary

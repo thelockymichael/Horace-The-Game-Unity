@@ -101,7 +101,7 @@ public class PlayerMovement02 : MonoBehaviour
                 SlowDown();
                 timer += Time.deltaTime;
                 // innerTimer -= Time.deltaTime;
-                Debug.Log(Mathf.RoundToInt(timer));
+                //Debug.Log(Mathf.RoundToInt(timer));
                 playerXPosition = MoveBack.position.x;
                 transform.position = Vector2.Lerp(transform.position, new Vector2(playerXPosition, transform.position.y), speed);
                 // StartCoroutine(moveBackDelay());
@@ -163,7 +163,7 @@ public class PlayerMovement02 : MonoBehaviour
             {
                 nextFire = Time.time + fireRate;
                 slidingFinished = false;
-                Debug.Log("Sliding");
+                //Debug.Log("Sliding");
                 crouch = true;
             }
             else if (Time.time > nextFire)
