@@ -56,7 +56,7 @@ public class UI_Manager : MonoBehaviour
     public void Restart()
     {
          Time.timeScale = 1.0f;
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+         SceneManager.LoadScene("game");
     }
 
     // Start is called before the first frame update

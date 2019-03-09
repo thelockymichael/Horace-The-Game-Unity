@@ -132,7 +132,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 b21af3632b0aaa863cfe392d5fd7a5d3 Unity.2D.SpriteShape.Runtime.dll:UnityEngine.U2D.SpriteShape
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 3c99d50bdefe5cf06f53cbe0f5e9879c InControl.dll:InControl.TouchSwipeControl
-d73c7a174bf187a682fa25bc5655e5d6 Assembly-CSharp.dll:.coinScript
+ccd106b63965520583ef63bede487deb Assembly-CSharp.dll:.coinScript
 24167127d15f474d1c9e835b9ff03d96 InControl.dll:InControl.TestInputManager
 0077fc8e4fbae67f80e80ebd534de5a0 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 f8b139fcde9fda6214245df246415cc7 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour

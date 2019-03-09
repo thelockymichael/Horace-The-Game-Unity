@@ -234,6 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 32
+  coinValue: 0
+  isCoin: 0
 --- !u!95 &1996478920
 Animator:
   serializedVersion: 3
@@ -244,7 +246,7 @@ Animator:
   m_GameObject: {fileID: 3936024773374286300}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e9ce46e0c5831334d8eda23772c561b2, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

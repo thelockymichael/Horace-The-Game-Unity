@@ -7,6 +7,8 @@ public class coinScript : MonoBehaviour
     private GameController gameController;
     public float speed = 2.5f;
     private Rigidbody2D rb;
+    public Collider2D coinCollider;
+
     public int coinValue;
     // Start is called before the first frame update
     void Start()
@@ -16,13 +18,13 @@ public class coinScript : MonoBehaviour
         gameController = gameControllerObject.GetComponent<GameController>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<BoxCollider2D>().enabled = false;
+            //other.GetComponent<BoxCollider2D>().enabled = false;
             Debug.Log(other.name);
-           gameController.AddCoins(coinValue);
+            gameController.AddCoins(coinValue);
             Destroy(gameObject);
         }
         

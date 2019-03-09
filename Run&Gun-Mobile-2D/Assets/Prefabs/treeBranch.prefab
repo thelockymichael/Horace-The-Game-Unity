@@ -196,6 +196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 32
+  coinValue: 0
+  isCoin: 0
 --- !u!61 &4159849358774210708
 BoxCollider2D:
   m_ObjectHideFlags: 0

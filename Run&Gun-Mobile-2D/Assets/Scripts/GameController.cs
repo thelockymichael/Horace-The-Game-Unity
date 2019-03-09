@@ -53,9 +53,19 @@ public class GameController : MonoBehaviour
 
     public int playerHasRun = 0;
     private int distanceRunDividedBy = 10;
+    private bool playerHasRun100Feet = false;
+
+
+
+    private float gameTimer;
+    private int targetGameTimer = 10;
+    private float speed = 1.10f;
+
     void Start()
     {
-
+        Debug.Log(distance);
+        distanceRunDividedBy = 10;
+        playerHasRun = 0;
         distance = 0;
         currentBalance = PlayerPrefs.GetInt("currencyPref");
 
@@ -72,8 +82,10 @@ public class GameController : MonoBehaviour
         coinCountText.text = "0";
         feetCountText.text = "0";
 
-        gameOver = false;
- 
+        foreach (GameObject hazard in hazards)
+        {
+            hazard.gameObject.GetComponent<OnCollision>().speed = 32f;
+        }
     }
 
     public void startGame()
@@ -84,19 +96,34 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        
+        if(!playGame)
+        {
+            distance = 0;
+        }
+        // Debug.Log(playerHasRun);
 
         if (playGame)
         {
             if (running)
             {
-               ++distance;
-                float distanceRun = distance  + Time.time;
+                ++distance;
+                float distanceRun = distance  + Time.deltaTime;
 
                 //         Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
 
-                playerHasRun = Mathf.RoundToInt(distanceRun);// / distanceRunDividedBy;
+                playerHasRun = Mathf.RoundToInt(distanceRun) / distanceRunDividedBy;
                 feetCountText.text = playerHasRun.ToString();
+                //Debug.Log(playerHasRun);
+
+                gameTimer += Time.deltaTime;
+
+
+               // Debug.Log(Mathf.RoundToInt(gameTimer));
+                if (gameTimer >= targetGameTimer)
+                {
+                    SpeedUp();
+                    targetGameTimer += targetGameTimer;
+                }
             }
         }
     }
@@ -114,9 +141,25 @@ public class GameController : MonoBehaviour
         coinCountText.text = coinsCollected.ToString();
     }
 
+    void SpeedUp()
+    {
+        backGroundLayers[0].GetComponent<BGScroller>().speed *= speed;
+        backGroundLayers[1].GetComponent<BGScroller>().speed *= speed;
+        backGroundLayers[2].GetComponent<BGScroller>().speed *= speed;
+
+        foreach (GameObject hazard in hazards)
+        {
+            hazard.gameObject.GetComponent<OnCollision>().speed *= speed;
+        }
+    }
 
     public void StopAllEnemies()
     {
+        foreach (GameObject layer in backGroundLayers)
+        {
+            layer.gameObject.GetComponent<BGScroller>().enabled = false;
+        }
+
         Debug.Log("stopAllEnemies");
         /* int vihu = 0;
          vihu++;
@@ -140,18 +183,15 @@ public class GameController : MonoBehaviour
             {
                 gameObj.GetComponent<OnCollision>().speed = 0f;
             }
-            //Debug.Log("EMEMIES = " + (i));
-            if (i == 0)
-            {
-                //     Debug.Log("NO EMEMIES LEFT IN SCENE");
-            }
-  
+            //Debug.Log("EMEMIES = " + (i));  
         }
     }
 
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
+
+     
         while (true)
         {
             for (int i = 0; i < hazardCount; i++)
@@ -168,16 +208,12 @@ public class GameController : MonoBehaviour
                 //  ReverseDirection(clone);
                 yield return new WaitForSeconds(spawnWait);
             }
-            yield return new WaitForSeconds(waveWait);
+            //yield return new WaitForSeconds(waveWait);
 
             if (gameOver)
             {
-                foreach (GameObject layer in backGroundLayers)
-                {
-                    layer.gameObject.GetComponent<BGScroller>().enabled = false;
-                }
+
                 StopAllEnemies();
-           
 
                 feetCountText.text = playerHasRun.ToString();
 
@@ -194,9 +230,10 @@ public class GameController : MonoBehaviour
                     highScoreText.text = /*"Hiscore : " + */playerHasRun.ToString();
                     newHighScoreText.text = "New High \nScore!";
                 }
+
                 // backGroundLayers.BGScroller();
-               // restartText.text = "try again";
-              //  restart = true;
+                // restartText.text = "try again";
+                //  restart = true;
                 break;
             }
         }
