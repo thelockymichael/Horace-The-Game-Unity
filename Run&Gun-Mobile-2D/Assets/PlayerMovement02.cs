@@ -27,7 +27,6 @@ public class PlayerMovement02 : MonoBehaviour
 
     public int gotHit;
 
-
     public Transform deadPoint; 
     public Transform MoveBack;  // Using it to grab the player's position
     public Transform originPoint; 
@@ -68,8 +67,6 @@ public class PlayerMovement02 : MonoBehaviour
         gotHit = 0;
     }
     // Update is called once per frame
-
-
 
     void Update()
     {

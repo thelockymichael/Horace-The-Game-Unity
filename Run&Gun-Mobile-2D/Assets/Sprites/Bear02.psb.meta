@@ -1,0 +1,431 @@
+fileFormatVersion: 2
+guid: 52867adcd715ad54ab611bc27b700fbb
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: backLeftShin_GO/backLeftShin_GO
+    100002: backLeftShin_GO/backLeftShin_GO/backLeftShin
+    100004: backLeftShin_GO/backLeftShin_GO/backLeftThigh
+    100006: backLeftShin_GO/backLeftShin_GO/backRightShin
+    100008: backLeftShin_GO/backLeftShin_GO/backRightThigh
+    100010: backLeftShin_GO/backLeftShin_GO/bearHead
+    100012: backLeftShin_GO/backLeftShin_GO/bearTorso
+    100014: backLeftShin_GO/backLeftShin_GO/frontLeftThigh
+    100016: backLeftShin_GO/backLeftShin_GO/frontLeftThigh_1
+    100018: backLeftShin_GO/backLeftShin_GO/frontRightShin
+    100020: backLeftShin_GO/backLeftShin_GO/frontRightThigh
+    400000: backLeftShin_GO/backLeftShin_GO/Transform
+    400002: backLeftShin_GO/backLeftShin_GO/backLeftShin/Transform
+    400004: backLeftShin_GO/backLeftShin_GO/backLeftThigh/Transform
+    400006: backLeftShin_GO/backLeftShin_GO/backRightShin/Transform
+    400008: backLeftShin_GO/backLeftShin_GO/backRightThigh/Transform
+    400010: backLeftShin_GO/backLeftShin_GO/bearHead/Transform
+    400012: backLeftShin_GO/backLeftShin_GO/bearTorso/Transform
+    400014: backLeftShin_GO/backLeftShin_GO/frontLeftThigh/Transform
+    400016: backLeftShin_GO/backLeftShin_GO/frontLeftThigh_1/Transform
+    400018: backLeftShin_GO/backLeftShin_GO/frontRightShin/Transform
+    400020: backLeftShin_GO/backLeftShin_GO/frontRightThigh/Transform
+    2800000: Bear02
+    21200000: backLeftShin_GO/backLeftShin_GO/backLeftShin/SpriteRenderer
+    21200002: backLeftShin_GO/backLeftShin_GO/backLeftThigh/SpriteRenderer
+    21200004: backLeftShin_GO/backLeftShin_GO/backRightShin/SpriteRenderer
+    21200006: backLeftShin_GO/backLeftShin_GO/backRightThigh/SpriteRenderer
+    21200008: backLeftShin_GO/backLeftShin_GO/bearHead/SpriteRenderer
+    21200010: backLeftShin_GO/backLeftShin_GO/bearTorso/SpriteRenderer
+    21200012: backLeftShin_GO/backLeftShin_GO/frontLeftThigh/SpriteRenderer
+    21200014: backLeftShin_GO/backLeftShin_GO/frontLeftThigh_1/SpriteRenderer
+    21200016: backLeftShin_GO/backLeftShin_GO/frontRightShin/SpriteRenderer
+    21200018: backLeftShin_GO/backLeftShin_GO/frontRightThigh/SpriteRenderer
+    21300000: frontRightThigh
+    21300002: bearHead
+    21300004: backRightThigh
+    21300006: backRightShin
+    21300008: frontRightShin
+    21300010: bearTorso
+    21300012: frontLeftThigh
+    21300014: frontLeftThigh_1
+    21300016: backLeftThigh
+    21300018: backLeftShin
+    100100000: backLeftShin_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: frontRightThigh
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 859
+      width: 267
+      height: 390
+    spriteID: f17a7a9b14960cb4c95f53e7ece75c95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -630, y: -369}
+  - name: bearHead
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 479
+      width: 379
+      height: 372
+    spriteID: 3584fc119db8ee14a86036b575ef97cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -797, y: -1002}
+  - name: backRightThigh
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1624
+      width: 251
+      height: 344
+    spriteID: 997b95ef1d609b94da8935af397126e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -313, y: 439}
+  - name: backRightShin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 820
+      y: 4
+      width: 194
+      height: 257
+    spriteID: 07da4dabdff98754d9baf355e31dca7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 521, y: -1076}
+  - name: frontRightShin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 391
+      y: 804
+      width: 255
+      height: 288
+    spriteID: 617de778d603c7a4bb23030c077b871b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -283, y: -280}
+  - name: bearTorso
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 808
+      height: 467
+    spriteID: a0bf7ba6ef7911a44bc7e638457e414f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -295, y: -1336}
+  - name: frontLeftThigh
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1257
+      width: 252
+      height: 359
+    spriteID: f62939f4508643d4ead7fa17624ff49d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -764, y: -51}
+  - name: frontLeftThigh_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 391
+      y: 1100
+      width: 255
+      height: 288
+    spriteID: ac923028e7601004b9baa9ce049519f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -451, y: -64}
+  - name: backLeftThigh
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 391
+      y: 479
+      width: 272
+      height: 317
+    spriteID: 227c27428438f494aaf6443dcc71e7f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -26, y: -861}
+  - name: backLeftShin
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 391
+      y: 1396
+      width: 197
+      height: 253
+    spriteID: eb7e306635a5f614e938f86363e19188
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -101, y: 232}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 2048
+  documentSize: {x: 3840, y: 2160}
+  textureActualWidth: 1024
+  textureActualHeight: 2048
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: frontRightThigh
+    spriteName: frontRightThigh
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f17a7a9b14960cb4c95f53e7ece75c95
+    layerID: 75
+    mosaicPosition: {x: 4, y: 859}
+  - name: bearHead
+    spriteName: bearHead
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3584fc119db8ee14a86036b575ef97cf
+    layerID: 84
+    mosaicPosition: {x: 4, y: 479}
+  - name: backRightThigh
+    spriteName: backRightThigh
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 997b95ef1d609b94da8935af397126e5
+    layerID: 79
+    mosaicPosition: {x: 4, y: 1624}
+  - name: backRightShin
+    spriteName: backRightShin
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 07da4dabdff98754d9baf355e31dca7b
+    layerID: 80
+    mosaicPosition: {x: 820, y: 4}
+  - name: frontRightShin
+    spriteName: frontRightShin
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 617de778d603c7a4bb23030c077b871b
+    layerID: 76
+    mosaicPosition: {x: 391, y: 804}
+  - name: bearTorso
+    spriteName: bearTorso
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a0bf7ba6ef7911a44bc7e638457e414f
+    layerID: 70
+    mosaicPosition: {x: 4, y: 4}
+  - name: frontLeftThigh
+    spriteName: frontLeftThigh
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f62939f4508643d4ead7fa17624ff49d
+    layerID: 77
+    mosaicPosition: {x: 4, y: 1257}
+  - name: frontLeftThigh
+    spriteName: frontLeftThigh_1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ac923028e7601004b9baa9ce049519f1
+    layerID: 78
+    mosaicPosition: {x: 391, y: 1100}
+  - name: backLeftThigh
+    spriteName: backLeftThigh
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 227c27428438f494aaf6443dcc71e7f0
+    layerID: 83
+    mosaicPosition: {x: 391, y: 479}
+  - name: backLeftShin
+    spriteName: backLeftShin
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eb7e306635a5f614e938f86363e19188
+    layerID: 82
+    mosaicPosition: {x: 391, y: 1396}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0

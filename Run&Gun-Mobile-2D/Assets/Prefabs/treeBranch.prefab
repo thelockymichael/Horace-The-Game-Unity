@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3511742400287786887}
   m_Layer: 0
   m_Name: deadTreeObstacle
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +215,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.1}
-    oldSize: {x: 6.8, y: 4.41}
+    oldSize: {x: 6.97, y: 4.33}
     newSize: {x: 6.8, y: 4.41}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

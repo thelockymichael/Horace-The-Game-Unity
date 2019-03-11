@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BearScript.cs" />
     <Compile Include="Assets\BGScroller.cs" />
     <Compile Include="Assets\coinScript.cs" />
     <Compile Include="Assets\DestroyByBoundary.cs" />

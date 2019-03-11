@@ -18,7 +18,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(dirX);
+       // Debug.Log(dirX);
         rb.velocity = new Vector2(dirX, 0f);
     }
 }
