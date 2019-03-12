@@ -138,6 +138,39 @@ public class PlayerMovement02 : MonoBehaviour
 
             anim.SetBool("isRunning", true);
 
+         
+           if (InputManager.ActiveDevice.DPadUp && jumpingAllowed)
+           {
+               jump = true;
+
+               StartCoroutine(jumpDelay());
+               // anim.SetBool("IsJumping", true);
+
+           }
+           if (InputManager.ActiveDevice.DPadUp && slidingFinished && jumpingAllowed)
+           {
+               slidingFinished = false;
+               jump = true;
+               StartCoroutine(jumpDelay());
+               //anim.SetBool("IsJumping", true);
+           }
+            if (InputManager.ActiveDevice.DPadDown && (Time.time > nextFire))
+            {
+                StartCoroutine(slideDelay());
+                nextFire = Time.time + fireRate;
+                crouch = true;
+            
+            }
+
+            /*
+            else if (Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                slidingFinished = true;
+                crouch = false;
+            }
+            */
+            /*
             if (InputManager.ActiveDevice.DPadUp && jumpingAllowed)
             {
                 jump = true;
@@ -166,6 +199,7 @@ public class PlayerMovement02 : MonoBehaviour
                 slidingFinished = true;
                 crouch = false;
             }
+            */
         }
     }
          
@@ -177,7 +211,7 @@ public class PlayerMovement02 : MonoBehaviour
 
     IEnumerator slideDelay()
     {
-        yield return new WaitForSeconds(1.23f);
+        yield return new WaitForSeconds(1.25f);
         crouch = false;
     }
 

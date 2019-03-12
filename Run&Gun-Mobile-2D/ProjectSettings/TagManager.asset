@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Boundary
   - Coin
+  - UIManager
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Ground
   - Player
   - Boundary
-  - 
+  - Bear
   - 
   - 
   - 
@@ -56,6 +57,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3742151237
+    locked: 0
+  - name: Bear
+    uniqueID: 3233370547
     locked: 0
   - name: enemyCactus
     uniqueID: 3988567185

@@ -126,7 +126,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 31fa934c20112017d2f1630c7b428ca2 Assembly-CSharp.dll:.PickupManager
 347581df9c2102dfebd0268ddfd70232 InControl.Examples.dll:InterfaceMovement.ButtonManager
-5d60e31861921be64c8b6aca630b5d5d Assembly-CSharp.dll:.UI_Manager
+6c56ba5cd9403ba0c302ec1655dcfc25 Assembly-CSharp.dll:.UI_Manager
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 b21af3632b0aaa863cfe392d5fd7a5d3 Unity.2D.SpriteShape.Runtime.dll:UnityEngine.U2D.SpriteShape
@@ -262,6 +262,7 @@ d1f07c9e64b7817e6271f80bb03de25f InControl.Examples.dll:MultiplayerBasicExample.
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DestroyByBoundary
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.dll:InControl.InControlPluginsPath
+0ae84ee418ae1635bf0485234ab1536d Assembly-CSharp.dll:.BearScript
 71bb6a6b6c8f052f948db64c7dd3ca4f InControl.Examples.dll:TouchExample.CubeController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FPS
 edec4c602b0001fe25485c47ebf3be6c Unity.2D.IK.Runtime.dll:UnityEditor.Experimental.U2D.IK.IKEditorManagerHelper
@@ -346,4 +347,3 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-0ae84ee418ae1635bf0485234ab1536d Assembly-CSharp.dll:.BearScript

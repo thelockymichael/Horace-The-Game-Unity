@@ -8,9 +8,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameController : MonoBehaviour
 {
-    private static GameController instance;
-    public static GameController Instance { get { return instance; } }
-
+    public GameObject gameManager;
 
     public GameObject[] hazards;
 
@@ -22,10 +20,12 @@ public class GameController : MonoBehaviour
     public float startWait;
     public float waveWait;
 
-
     public Text coinCountText;
+    public GameObject coinCountImage;
+
     public Text feetCountText;
-    
+    public GameObject feetCountImage;
+
     public Text newHighScoreText;
     public Text highScoreText;
 
@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
     public GameObject[] backGroundLayers;
 
     public int playerHasRun = 0;
-    private int distanceRunDividedBy = 10;
+    private float distanceRunDividedBy = 10;
     private bool playerHasRun100Feet = false;
 
 
@@ -61,9 +61,18 @@ public class GameController : MonoBehaviour
     private int targetGameTimer = 10;
     private float speed = 1.10f;
 
+    private UI_Manager UIManager;
+
     void Start()
     {
-        Debug.Log(distance);
+        coinCountImage.SetActive(true);
+        feetCountImage.SetActive(true);
+
+        gameManager.SetActive(false);
+
+        GameObject UIManagerObject = GameObject.FindWithTag("UIManager");
+        UIManager = UIManagerObject.GetComponent<UI_Manager>();
+
         distanceRunDividedBy = 10;
         playerHasRun = 0;
         distance = 0;
@@ -104,19 +113,17 @@ public class GameController : MonoBehaviour
 
         if (playGame)
         {
-            if (running)
+            if (running && !UIManager.GameIsPaused)
             {
                 ++distance;
                 float distanceRun = distance  + Time.deltaTime;
-
                 //         Debug.Log("The player has run " + Mathf.RoundToInt(distanceRun) / 200 + " meters.");
 
-                playerHasRun = Mathf.RoundToInt(distanceRun) / distanceRunDividedBy;
+                playerHasRun = Mathf.RoundToInt(distanceRun / distanceRunDividedBy);
                 feetCountText.text = playerHasRun.ToString();
                 //Debug.Log(playerHasRun);
 
                 gameTimer += Time.deltaTime;
-
 
                // Debug.Log(Mathf.RoundToInt(gameTimer));
                 if (gameTimer >= targetGameTimer)
@@ -143,6 +150,8 @@ public class GameController : MonoBehaviour
 
     void SpeedUp()
     {
+        Debug.Log("Distance Run Divided By: " + distanceRunDividedBy);
+        distanceRunDividedBy *= 0.95f;
         backGroundLayers[0].GetComponent<BGScroller>().speed *= speed;
         backGroundLayers[1].GetComponent<BGScroller>().speed *= speed;
         backGroundLayers[2].GetComponent<BGScroller>().speed *= speed;
@@ -190,8 +199,7 @@ public class GameController : MonoBehaviour
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-
-     
+        
         while (true)
         {
             for (int i = 0; i < hazardCount; i++)
@@ -212,7 +220,14 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
+                coinCountImage.SetActive(false);
+                feetCountImage.SetActive(false);
+                gameManager.SetActive(true);
 
+                coinCountText.text = "";
+                feetCountText.text = "";
+
+                Debug.Log(feetCountText.text);
                 StopAllEnemies();
 
                 feetCountText.text = playerHasRun.ToString();

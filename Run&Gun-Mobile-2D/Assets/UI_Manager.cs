@@ -12,7 +12,7 @@ public class UI_Manager : MonoBehaviour
 
     // Menus
     public GameObject pauseMenu;
-    private bool GameIsPaused = false;
+    public bool GameIsPaused = false;
 
 
     public GameObject[] backGroundLayers;
