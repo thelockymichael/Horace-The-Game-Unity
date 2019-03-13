@@ -60,25 +60,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BearScript.cs" />
-    <Compile Include="Assets\BGScroller.cs" />
-    <Compile Include="Assets\coinScript.cs" />
-    <Compile Include="Assets\DestroyByBoundary.cs" />
-    <Compile Include="Assets\FPS.cs" />
-    <Compile Include="Assets\GroundCheck.cs" />
-    <Compile Include="Assets\ItemManifest.cs" />
-    <Compile Include="Assets\move.cs" />
-    <Compile Include="Assets\OnCollision.cs" />
-    <Compile Include="Assets\Parallaxing.cs" />
-    <Compile Include="Assets\PickupManager.cs" />
-    <Compile Include="Assets\PickupSpawner.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\PlayerMovement02.cs" />
-    <Compile Include="Assets\rotationToHand.cs" />
+    <Compile Include="Assets\Scripts\BearScript.cs" />
+    <Compile Include="Assets\Scripts\BGScroller.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\coinScript.cs" />
+    <Compile Include="Assets\Scripts\DestroyByBoundary.cs" />
+    <Compile Include="Assets\Scripts\FPS.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GameInit.cs" />
+    <Compile Include="Assets\Scripts\GroundCheck.cs" />
+    <Compile Include="Assets\Scripts\ItemManifest.cs" />
+    <Compile Include="Assets\Scripts\move.cs" />
+    <Compile Include="Assets\Scripts\OnCollision.cs" />
+    <Compile Include="Assets\Scripts\Parallaxing.cs" />
+    <Compile Include="Assets\Scripts\PickupManager.cs" />
+    <Compile Include="Assets\Scripts\PickupSpawner.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement02.cs" />
+    <Compile Include="Assets\Scripts\rotationToHand.cs" />
+    <Compile Include="Assets\Scripts\ShopControlScript.cs" />
+    <Compile Include="Assets\Scripts\UI_Manager.cs" />
     <Compile Include="Assets\SpriterDotNet\DefaultContentLoader.cs" />
     <Compile Include="Assets\SpriterDotNet\IContentLoader.cs" />
     <Compile Include="Assets\SpriterDotNet\Lib\Animator.cs" />
@@ -107,7 +109,6 @@
     <Compile Include="Assets\SpriterDotNet\SpriterDotNetBehaviourEditor.cs" />
     <Compile Include="Assets\SpriterDotNet\SpriterImporter.cs" />
     <Compile Include="Assets\SpriterDotNet\UnityAnimator.cs" />
-    <Compile Include="Assets\UI_Manager.cs" />
     <Reference Include="Unity.2D.Animation.Runtime">
       <HintPath>C:/Users/Mike/Documents/GitHub/Run-And-Gun-2D/Run&amp;Gun-Mobile-2D/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>

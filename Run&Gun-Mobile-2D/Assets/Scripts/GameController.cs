@@ -25,6 +25,11 @@ public class GameController : MonoBehaviour
 
     public Text feetCountText;
     public GameObject feetCountImage;
+    public Transform feetCountImagePosition;
+    public Transform feetCountTextPosition;
+
+    public Transform coinCountImagePosition;
+    public Transform coinCountTextPosition;
 
     public Text newHighScoreText;
     public Text highScoreText;
@@ -63,10 +68,13 @@ public class GameController : MonoBehaviour
 
     private UI_Manager UIManager;
 
+    int isRifleSold;
+    public GameObject rifle;
+
     void Start()
     {
-        coinCountImage.SetActive(true);
-        feetCountImage.SetActive(true);
+        //coinCountImage.SetActive(true);
+        //feetCountImage.SetActive(true);
 
         gameManager.SetActive(false);
 
@@ -77,7 +85,17 @@ public class GameController : MonoBehaviour
         playerHasRun = 0;
         distance = 0;
         currentBalance = PlayerPrefs.GetInt("currencyPref");
+        isRifleSold = PlayerPrefs.GetInt("IsRifleSold");
 
+        if (isRifleSold == 1)
+        {
+            rifle.SetActive(true);
+        }
+        else
+        {
+            rifle.SetActive(false);
+        }
+        
         currencyBalance.text = currentBalance.ToString();
 
         highScoreText.text = /*"Hiscore: " + */PlayerPrefs.GetInt("HighScore", 0).ToString();
@@ -220,12 +238,24 @@ public class GameController : MonoBehaviour
 
             if (gameOver)
             {
-                coinCountImage.SetActive(false);
-                feetCountImage.SetActive(false);
+                feetCountImage.transform.position = feetCountImagePosition.transform.position;
+                feetCountImage.transform.SetParent(feetCountImagePosition);
+
+                feetCountText.transform.position = feetCountTextPosition.transform.position;
+                feetCountText.transform.SetParent(feetCountTextPosition);
+
+                coinCountImage.transform.position = coinCountImagePosition.transform.position;
+                coinCountImage.transform.SetParent(coinCountImagePosition);
+
+                coinCountText.transform.position = coinCountTextPosition.transform.position;
+                coinCountText.transform.SetParent(coinCountTextPosition);
+
+                //coinCountImage.SetActive(false);
+                //feetCountImage.SetActive(false);
                 gameManager.SetActive(true);
 
-                coinCountText.text = "";
-                feetCountText.text = "";
+                //coinCountText.text = "";
+                //feetCountText.text = "";
 
                 Debug.Log(feetCountText.text);
                 StopAllEnemies();

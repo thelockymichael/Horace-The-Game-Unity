@@ -267,7 +267,7 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FPS
 edec4c602b0001fe25485c47ebf3be6c Unity.2D.IK.Runtime.dll:UnityEditor.Experimental.U2D.IK.IKEditorManagerHelper
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
-6b5cdcef867aafeb4283004c3854d90b Assembly-CSharp.dll:.GameController
+02fdda1a2fad1bc27f3f56289352938c Assembly-CSharp.dll:.GameController
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 99a90dc51e453273f1b7627e1f6f2c00 InControl.dll:InControl.TouchStickControl
 c4e1576accb88b117a9ecb4410606ba7 InControl.dll:InControl.InControlManager
@@ -347,3 +347,4 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+ab198dbb46e97c55fe06d069623f2c0c Assembly-CSharp.dll:.ShopControlScript
